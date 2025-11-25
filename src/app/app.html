@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div id="c1">
+        <img src="Logo.jfif" alt="" />
+        <ul>
+          <li><p><a routerLink="/home">Accueil</a></p></li>
+          <li><p><a routerLink="/about" routerLinkActive="active">Qui est nous?</a></p></li>
+          <li><p><a routerLink="/">Platforme</a></p></li>
+          <li><p><a routerLink="/offers">Offres</a></p></li>
+          <li><p><a routerLink="/staff">Profs</a></p></li>
+        </ul>
+      </div>
+      <div id="c2">
+        <div id="bc">
+          <button id="login">Log-in</button>
+          <button id="reg">Registrer</button>
+        </div>
+      </div>
+    </nav>
+    <h2>testing routing</h2>
+    <router-outlet></router-outlet>
+  </body>
+</html>
