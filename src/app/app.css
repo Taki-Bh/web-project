@@ -7,7 +7,16 @@
      /* hide horizontal scrolling */
   scrollbar-width: none;    /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
+  
+  opacity: 1;
+
+
+  
+  
 }
+
+
+
 /* Hide scrollbars in Chrome, Edge, Safari */
 ::-webkit-scrollbar {
     width: 0px;
