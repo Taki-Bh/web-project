@@ -15,7 +15,6 @@ export class App{
   loaded :boolean=false;
   onActivate() {
     this.loaded=false;
-    alert("hi");
                // reset state
 
     setTimeout(() => this.loaded = true, 10); // apply loaded state

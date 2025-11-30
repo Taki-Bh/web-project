@@ -1,35 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-    <title>Document</title>
-  </head>
-  <body>
-    <nav>
-      <div id="c1">
-        <img src="Logo.jfif" alt="" />
-        <ul>
-          <li><p><a routerLink="/home" routerLinkActive="active">Accueil</a></p></li>
-          <li><p><a routerLink="/about" routerLinkActive="active">Qui est nous?</a></p></li>
-          <li><p><a routerLink="/">Platforme</a></p></li>
-          <li><p><a routerLink="/offers" routerLinkActive="active">Offres</a></p></li>
-          <li><p><a routerLink="/staff" routerLinkActive="active">Profs</a></p></li>
-          <li><p><a routerLink="/content" routerLinkActive="active">Contenu</a></p></li>
-          <li><p><a routerLink="/articles" routerLinkActive="active">Articles</a></p></li>
-        </ul>
-      </div>
-      <div id="c2">
-        <div id="bc">
-          <button id="login">Log-in</button>
-          <button id="reg">Registrer</button>
+<nav>
+  <div id="c1">
+    <img src="Logo.jfif" alt="" />
+    <ul>
+      <li>
+        <p><a routerLink="/home" routerLinkActive="active">Accueil</a></p>
+      </li>
+      <li>
+        <p><a routerLink="/about" routerLinkActive="active">Qui est nous?</a></p>
+      </li>
+      <li id="chevron-container">
+        <p>Platforme</p>
+        <div id="chevron-wrapper">
+          <img id="chevron" src="assets/chevron-down-solid-full.svg" alt="" />
         </div>
-      </div>
-    </nav>
-      <div class="page-wrapper" [class.loaded]="loaded"><router-outlet (activate)="onActivate()" ></router-outlet></div>
-   
-    
-    
-  </body>
-</html>
+      </li>
+      <li>
+        <p><a routerLink="/offers" routerLinkActive="active">Offres</a></p>
+      </li>
+      <li>
+        <p><a routerLink="/staff" routerLinkActive="active">Profs</a></p>
+      </li>
+      <li>
+        <p><a routerLink="/content" routerLinkActive="active">Contenu</a></p>
+      </li>
+      <li>
+        <p><a routerLink="/articles" routerLinkActive="active">Articles</a></p>
+      </li>
+    </ul>
+  </div>
+  <div id="c2">
+    <div id="bc">
+      <button id="login">Log-in</button>
+      <button id="reg">Registrer</button>
+    </div>
+  </div>
+</nav>
+<div class="page-wrapper" [class.loaded]="loaded">
+  <router-outlet (activate)="onActivate()"></router-outlet>
+</div>
