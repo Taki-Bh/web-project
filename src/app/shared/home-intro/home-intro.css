@@ -1,6 +1,38 @@
-div{
+#home-intro{
+    width: 80vw;
+    height: 50vh;
+   /*linear-gradient(45deg,#4DA6FF,#4DA6FF,rgba(0, 84, 167, 0.486) ) ,*/
+    background:  url(/assets/home-intro-background2.jpg), linear-gradient(to top,rgb(248,234,101),rgb(231,233,106),rgb(200,228,120),rgb(160,223,140),rgb(125,212,165));
+    border-radius: 20px;
+    box-shadow:  0 0 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+h1{
+    margin-left: 40vw;
+}
+#home-container{
+    
     margin-top: 20vh;
-    width: 100vw;
-    height: 10vh;
-    background-color: red;
+    width: 83vw;
+    height: 55vh;
+    background: #F2F2F2 ;
+    border-radius: 20px;
+    box-shadow:  0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#plat-name{
+    color:rgb(0,82,174);
+    font-size: 40px;
+    text-shadow: 0 0 2px;
+}
+.white-text{
+    color:white;
 }

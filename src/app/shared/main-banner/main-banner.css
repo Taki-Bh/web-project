@@ -18,11 +18,11 @@
 
 #main-banner #main-banner-text{
     margin-left: 6vw;
-    font-weight: 2000;
+    
     display: flex;
     justify-content: left;
     align-items: center;
     flex-direction: column;
-    text-shadow: 0 0 1px ;
+    
     z-index: 1;
 }

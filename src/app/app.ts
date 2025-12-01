@@ -19,7 +19,7 @@ export class App {
     setTimeout(() => (this.loaded = true), 10); // apply loaded state
   }
   onPlatformClick() {
-    alert(this.platformIsClicked);
+    
     this.platformIsClicked = false;
     setTimeout(() => (this.platformIsClicked = true), 10);
   }

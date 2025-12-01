@@ -1,0 +1,11 @@
+div{
+    margin-top: 20vh;
+    width: 80vw;
+    height: 50vh;
+    background: radial-gradient(rgb(0,146,255),rgb(0,82,174)) ;
+    border-radius: 20px;
+    box-shadow:  0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
