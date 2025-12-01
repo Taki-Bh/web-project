@@ -23,7 +23,7 @@
        in case the 'loaded' class is added without keyframes. */
     transition: opacity 0.5s ease-out; 
 }
-.page-wrapper.loaded router-outlet + * {
+.page-wrapper.loaded router-outlet ~ * {
     opacity: 1;
     animation: slide-fade 0.5s ease-out;
 }
