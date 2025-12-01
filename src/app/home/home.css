@@ -1,0 +1,26 @@
+#main-banner{
+    margin-top: 5vh;
+    width: 100vw;
+    height: 50vh;
+    background: linear-gradient(-45deg,rgb(185, 196, 202),rgb(244, 248, 251),
+    rgb(244, 248, 251),white) ;
+    display: flex;
+    box-shadow:  0 0 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-banner img{
+    height: inherit;
+    opacity: 1;
+}
+
+#main-banner #main-banner-text{
+    margin-left: 6vw;
+    font-weight: 2000;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 0 0 1px ;
+}

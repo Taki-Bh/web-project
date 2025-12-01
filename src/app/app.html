@@ -8,7 +8,7 @@
       <li>
         <p><a routerLink="/about" routerLinkActive="active">Qui est nous?</a></p>
       </li>
-      <li id="chevron-container">
+      <li id="chevron-container" (click)="onPlatformClick()" [class.clicked]="platformIsClicked">
         <p>Platforme</p>
         <div id="chevron-wrapper">
           <img id="chevron" src="assets/chevron-down-solid-full.svg" alt="" />
@@ -35,6 +35,10 @@
     </div>
   </div>
 </nav>
+
+
+
+
 <div class="page-wrapper" [class.loaded]="loaded">
   <router-outlet (activate)="onActivate()"></router-outlet>
 </div>
