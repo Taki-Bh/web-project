@@ -1,11 +1,16 @@
-div{
+#main-container{
     margin-top: 20vh;
-    width: 80vw;
-    height: 50vh;
-    background: radial-gradient(rgb(0,146,255),rgb(0,82,174)) ;
-    border-radius: 20px;
+    width: 100vw;
+    height: 240vh;
+    background: rgb(0,146,255);
+   
     box-shadow:  0 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
+}
+#main-container img{
+    width: 40vw;
 }

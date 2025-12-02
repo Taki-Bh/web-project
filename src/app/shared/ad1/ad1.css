@@ -1,0 +1,43 @@
+#main-container{
+    margin-top: 20vh;
+    width: 100vw;
+    height: 80vh;
+    background: rgb(0,146,255);
+   
+    box-shadow:  0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#thx{
+    
+    transform: translateX(20%) rotate(20deg) ;
+    
+}
+#main-container div{
+    height: 80vh;
+    width: inherit;
+}
+#thx-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#thx-container h1{
+    color:#CDC476;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 2000;
+   
+}
+img{
+    box-shadow: 0 20px 20px ;
+    height: 75vh;
+    border-radius: 20px;
+}
+#ad{
+    transform: translateX(-5vw) rotate(-10deg);
+    height: 70vh;
+    border-radius: 20px;
+}
