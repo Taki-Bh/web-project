@@ -44,6 +44,8 @@ nav {
   justify-content: center;
   box-shadow: 0 2px 10px grey;
   font-size: 22px;
+  position: fixed;
+  z-index: 5000;
 }
 nav img {
   height: 85%;
