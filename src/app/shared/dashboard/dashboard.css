@@ -1,8 +1,8 @@
 #main-container{
     margin-top: 20vh;
     width: 100vw;
-    height: 240vh;
-    background: rgb(0,146,255);
+    height: 180vh;
+    
    
     box-shadow:  0 0 20px;
     display: flex;
@@ -11,6 +11,45 @@
     flex-direction: column;
     
 }
-#main-container img{
+#dashboard-background{
     width: 40vw;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+}
+#dashboard-container {
+    width: 40vw;
+    height: 150vh;
+   /* background-image: url(../../../assets/upscalemedia-transformed.jpeg);*/
+    background-size: contain;
+    background-repeat: no repeat;
+}
+.logos-container {
+    transform: translateY(-100vh);
+    width: 36vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    box-shadow: 0 0 0px black;
+    width: 9vw;
+    margin-top: 50px;
+    height: auto;
+    border-radius: 100%;
+    border: none;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info p {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
