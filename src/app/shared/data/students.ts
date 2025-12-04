@@ -1,0 +1,22 @@
+export const STUDENTS = [
+  { id: 1, firstName: 'Amira', lastName: 'Ben Salah', email: 'amira1@example.com', enrolledClasses: [1, 3] },
+  { id: 2, firstName: 'Yassin', lastName: 'Triki', email: 'yassin2@example.com', enrolledClasses: [2] },
+  { id: 3, firstName: 'Sara', lastName: 'Jlassi', email: 'sara3@example.com', enrolledClasses: [1, 2, 4] },
+  { id: 4, firstName: 'Bilel', lastName: 'Mhenni', email: 'bilel4@example.com', enrolledClasses: [5] },
+  { id: 5, firstName: 'Khalil', lastName: 'Ghedira', email: 'khalil5@example.com', enrolledClasses: [1] },
+  { id: 6, firstName: 'Nesrine', lastName: 'Ayari', email: 'nesrine6@example.com', enrolledClasses: [3, 6] },
+  { id: 7, firstName: 'Oussama', lastName: 'Saidi', email: 'oussama7@example.com', enrolledClasses: [2, 7] },
+  { id: 8, firstName: 'Sana', lastName: 'Jouini', email: 'sana8@example.com', enrolledClasses: [4] },
+  { id: 9, firstName: 'Hichem', lastName: 'Zidi', email: 'hichem9@example.com', enrolledClasses: [3] },
+  { id: 10, firstName: 'Rania', lastName: 'Marsaoui', email: 'rania10@example.com', enrolledClasses: [1, 5] },
+  { id: 11, firstName: 'Fares', lastName: 'Kefi', email: 'fares11@example.com', enrolledClasses: [8] },
+  { id: 12, firstName: 'Mehdi', lastName: 'Chaari', email: 'mehdi12@example.com', enrolledClasses: [6] },
+  { id: 13, firstName: 'Syrine', lastName: 'Ferjani', email: 'syrine13@example.com', enrolledClasses: [2, 9] },
+  { id: 14, firstName: 'Achraf', lastName: 'Baccar', email: 'achraf14@example.com', enrolledClasses: [10] },
+  { id: 15, firstName: 'Mariem', lastName: 'Daghfous', email: 'mariem15@example.com', enrolledClasses: [7] },
+  { id: 16, firstName: 'Walid', lastName: 'Ben Romdhane', email: 'walid16@example.com', enrolledClasses: [4, 8] },
+  { id: 17, firstName: 'Yasmin', lastName: 'Hadhri', email: 'yasmin17@example.com', enrolledClasses: [1] },
+  { id: 18, firstName: 'Iyed', lastName: 'Gassab', email: 'iyed18@example.com', enrolledClasses: [9] },
+  { id: 19, firstName: 'Malek', lastName: 'Latiri', email: 'malek19@example.com', enrolledClasses: [3, 5] },
+  { id: 20, firstName: 'Rached', lastName: 'Zemni', email: 'rached20@example.com', enrolledClasses: [10] }
+];

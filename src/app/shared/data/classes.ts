@@ -1,0 +1,22 @@
+export const ONLINE_CLASSES = [
+  { id: 1, title: 'Intro to Web Development', instructorId: 101, duration: '6 weeks', category: 'Web' },
+  { id: 2, title: 'Python for Beginners', instructorId: 102, duration: '4 weeks', category: 'Programming' },
+  { id: 3, title: 'Machine Learning Basics', instructorId: 103, duration: '8 weeks', category: 'AI' },
+  { id: 4, title: 'Database Fundamentals', instructorId: 101, duration: '5 weeks', category: 'Data' },
+  { id: 5, title: 'Advanced JavaScript', instructorId: 104, duration: '6 weeks', category: 'Web' },
+  { id: 6, title: 'C Programming Essentials', instructorId: 105, duration: '5 weeks', category: 'Programming' },
+  { id: 7, title: 'UI/UX Design Principles', instructorId: 106, duration: '4 weeks', category: 'Design' },
+  { id: 8, title: 'React Framework Mastery', instructorId: 104, duration: '7 weeks', category: 'Web' },
+  { id: 9, title: 'Data Structures & Algorithms', instructorId: 107, duration: '8 weeks', category: 'CS' },
+  { id: 10, title: 'Cloud Computing Basics', instructorId: 108, duration: '6 weeks', category: 'IT' },
+  { id: 11, title: 'Cybersecurity Foundations', instructorId: 109, duration: '5 weeks', category: 'Security' },
+  { id: 12, title: 'Agile Project Management', instructorId: 110, duration: '3 weeks', category: 'Management' },
+  { id: 13, title: 'Mobile App Development', instructorId: 104, duration: '6 weeks', category: 'Mobile' },
+  { id: 14, title: 'Statistics for Data Science', instructorId: 111, duration: '6 weeks', category: 'Math' },
+  { id: 15, title: 'Deep Learning Intro', instructorId: 103, duration: '7 weeks', category: 'AI' },
+  { id: 16, title: 'Networks & Protocols', instructorId: 109, duration: '5 weeks', category: 'IT' },
+  { id: 17, title: 'Operating Systems', instructorId: 107, duration: '8 weeks', category: 'CS' },
+  { id: 18, title: 'NoSQL Databases', instructorId: 101, duration: '5 weeks', category: 'Data' },
+  { id: 19, title: 'SaaS Architecture', instructorId: 108, duration: '6 weeks', category: 'Cloud' },
+  { id: 20, title: 'AI Ethics & Society', instructorId: 103, duration: '3 weeks', category: 'AI' }
+];

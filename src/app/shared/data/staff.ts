@@ -1,0 +1,22 @@
+export const STAFF = [
+  { id: 101, name: 'Prof. Mohamed Khelifi', role: 'Instructor', specialization: 'Web Development' },
+  { id: 102, name: 'Prof. Lina Mzoughi', role: 'Instructor', specialization: 'Python' },
+  { id: 103, name: 'Prof. Ahmed Aouini', role: 'Instructor', specialization: 'Machine Learning' },
+  { id: 104, name: 'Prof. Rami Hattab', role: 'Instructor', specialization: 'JavaScript & Frontend' },
+  { id: 105, name: 'Prof. Samir Maalej', role: 'Instructor', specialization: 'C / Embedded Systems' },
+  { id: 106, name: 'Prof. Imen Ben Youssef', role: 'Instructor', specialization: 'UI/UX Design' },
+  { id: 107, name: 'Prof. Fedi Sassi', role: 'Instructor', specialization: 'Algorithms' },
+  { id: 108, name: 'Prof. Ons Jouini', role: 'Instructor', specialization: 'Cloud Computing' },
+  { id: 109, name: 'Prof. Nidhal Hamdi', role: 'Instructor', specialization: 'Cybersecurity' },
+  { id: 110, name: 'Prof. Mariem Souissi', role: 'Instructor', specialization: 'Project Management' },
+  { id: 111, name: 'Prof. Ali Rekik', role: 'Instructor', specialization: 'Statistics' },
+  { id: 112, name: 'Hichem Karray', role: 'Administrator' },
+  { id: 113, name: 'Amina Ben Yedder', role: 'Support Staff' },
+  { id: 114, name: 'Khaled Gassab', role: 'System Engineer' },
+  { id: 115, name: 'Sonia Cherif', role: 'Content Manager' },
+  { id: 116, name: 'Youssef Mabrouk', role: 'Technical Support' },
+  { id: 117, name: 'Nour Abdelkefi', role: 'HR Manager' },
+  { id: 118, name: 'Faten Mejri', role: 'Coordinator' },
+  { id: 119, name: 'Salim Derouiche', role: 'IT Technician' },
+  { id: 120, name: 'Omar Gharbi', role: 'Data Analyst' }
+];
