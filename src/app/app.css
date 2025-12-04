@@ -5,7 +5,7 @@
   /* hide horizontal scrolling */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
-
+  margin-top: 13vh;
   opacity: 1;
 }
 
@@ -45,6 +45,7 @@ nav {
   box-shadow: 0 2px 10px grey;
   font-size: 22px;
   position: fixed;
+  top:0vh;
   z-index: 5000;
 }
 nav img {
