@@ -7,6 +7,7 @@
   -ms-overflow-style: none; /* IE 10+ */
   margin-top: 13vh;
   opacity: 1;
+  
 }
 
 /* Hide scrollbars in Chrome, Edge, Safari */
@@ -30,6 +31,8 @@ body {
   overflow-x: hidden; /* prevent horizontal scroll */
 }
 nav {
+
+  top: 0;
   width: 100vw;
   height: 13vh;
   background: linear-gradient(
