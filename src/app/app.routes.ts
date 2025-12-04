@@ -5,12 +5,9 @@ import { Content } from './content/content';
 import { Offers } from './offers/offers';
 import { Articles } from './articles/articles';
 import { Home } from './home/home';
-<<<<<<< HEAD
-=======
 import { Login } from './login/login';
 import { Signup } from './signup/signup';
 
->>>>>>> 8d40864 (commitrayen)
 
 export const routes: Routes = [
     {
@@ -35,8 +32,6 @@ export const routes: Routes = [
     {
         path: "home",
         component: Home
-<<<<<<< HEAD
-=======
     },
     {
         path: "login",
@@ -45,6 +40,5 @@ export const routes: Routes = [
     {
         path: "signup",
         component: Signup
->>>>>>> 8d40864 (commitrayen)
     }
 ];
