@@ -1,0 +1,95 @@
+.offres {
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center;
+background: #e6e6e6;
+box-shadow: 0 8px 10px rgba(12, 24, 48, 0.08);
+border-radius: 10px;
+}
+.container{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+}
+.card__title {
+margin: 1rem 5rem;
+font-size: 1.25rem;
+}
+.card__list {
+list-style: none;
+padding: 0;
+margin: 2rem;
+line-height: 1.6;
+}
+
+
+.price {
+margin-top: auto;
+font-weight: 700;
+font-size: 1.125rem;
+}
+
+
+.btn {
+margin-top: 16px;
+padding: 10px 18px;
+border-radius: 8px;
+border: none;
+cursor: pointer;
+background: #f5f7fa;
+font-weight: 600;
+}
+
+
+.card--small {
+flex: 1 1 280px;
+max-width: 320px;
+}
+
+.card--featured {
+height: 32rem;
+padding-top:2rem;
+max-width: 480px;
+position: relative;
+color: #fff;
+background: linear-gradient(135deg, #0b63ff 0%, #0a4bd6 100%);
+box-shadow: 0 18px 40px rgba(10, 75, 214, 0.25);
+transform: translateY(-8px) scale(1.03);
+}
+.card--featured .badge {
+position: absolute;
+top: 10px;
+margin-bottom: 100rem;
+left: 50%;
+transform: translateX(-50%);
+background: rgba(255,255,255,0.14);
+padding: 6px 12px;
+border-radius: 999px;
+font-weight: 700;
+font-size: 0.9rem;
+color: #fff;
+}
+
+
+.card--featured .btn {
+background: rgba(255,255,255,0.95);
+color: #0a4bd6;
+font-weight: 700;
+}
+
+
+@media (max-width: 900px) {
+.offres .container {
+flex-direction: column;
+gap: 16px;
+}
+
+
+.card--featured {
+order: 2;
+transform: none;
+}
+}

@@ -6,12 +6,12 @@
     padding: 0;
 }
 .body{
+    
     margin: 3rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(15deg, #0a1c25 0%, #2D336B 100%);
     color: white;
 }
 .firstcontainer{
@@ -23,7 +23,7 @@
 }
 form>input{
     margin-bottom: 1rem;
-    border: 0px;
+    border: 0px linear-gradient(15deg, #0a1c25 0%, #2D336B 100%);;
 }
 .section{
     padding: 0rem 3rem;

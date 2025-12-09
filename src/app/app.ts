@@ -5,9 +5,7 @@ import { NgStyle} from '@angular/common';
   selector: 'app-root',
   imports: [RouterOutlet, RouterLinkActive, RouterLink,NgStyle],
   templateUrl: './app.html',
-  
   styleUrl: './app.css',
-  
 })
 export class App {
   platformIsClicked = false;
