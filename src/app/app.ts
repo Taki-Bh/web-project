@@ -1,11 +1,12 @@
 import { Component, HostListener, signal, ElementRef, ViewChild } from '@angular/core';
 import { RouterOutlet, RouterLinkActive, RouterLink } from '@angular/router';
-import { NgStyle} from '@angular/common';
+import { NgStyle, NgIf } from '@angular/common';
+import { EnrollModal } from './shared/enroll-modal/enroll-modal';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLinkActive, RouterLink,NgStyle],
+  imports: [EnrollModal, RouterOutlet, RouterLinkActive, RouterLink, NgIf],
   templateUrl: './app.html',
-  
   styleUrl: './app.css',
   
 })
@@ -29,6 +30,7 @@ export class App {
 
 
   }
+  
    
   protected readonly title = signal('web-project');
 }

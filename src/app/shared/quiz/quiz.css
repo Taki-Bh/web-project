@@ -1,0 +1,51 @@
+#main-container{
+    background: red;
+    height: 80vh;
+    width: 50vw;
+}
+#main-container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:32px;
+    height: 40vh;
+    width: 40vw;
+    padding: 10vh 5vw;
+    text-align: center;
+}
+#resetBtn{
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 100%;
+    background: red;
+    border: none;
+}
+#main-container div{
+    height: 20vh;
+    width: inherit;
+    background: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#ansbtn-container button{
+  height: 60%;
+  width: 10vw;
+  border: 1px solid rgb(0, 82, 174);
+  border-radius: 20px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 22px;
+  /*color:rgb(0,82,174);*/
+  background: linear-gradient(to left, rgb(36, 115, 206), rgb(0, 45, 248));
+  transition: 0.5s;
+
+  box-shadow: 0 0 5px rgba(0, 81, 174, 0.384);
+}
+p{
+    background:blue;
+}
