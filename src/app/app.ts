@@ -1,9 +1,11 @@
 import { Component, HostListener, signal, ElementRef, ViewChild } from '@angular/core';
 import { RouterOutlet, RouterLinkActive, RouterLink } from '@angular/router';
 import { NgStyle} from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms'; // <-- Add this
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLinkActive, RouterLink,NgStyle],
+  imports: [RouterOutlet, RouterLinkActive, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
@@ -13,7 +15,6 @@ export class App {
   onActivate() {
     this.loaded = false;
     // reset state
-
     setTimeout(() => (this.loaded = true), 10); // apply loaded state
   }
   onPlatformClick() {
@@ -23,9 +24,6 @@ export class App {
   }
   @HostListener('document:click', ['$event'])
   handleKeyDown(event: MouseEvent) {
-    
-
-
   }
    
   protected readonly title = signal('web-project');

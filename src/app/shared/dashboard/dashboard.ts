@@ -12,11 +12,12 @@ export class Dashboard implements OnInit{
   studentsCount =0;
   onlineClassesCount=0;
   staffCount=0;
+  coursCount=0;
   ngOnInit(): void {
       this.studentsCount = STUDENTS.length;
-      alert(this.studentsCount)
       this.staffCount=STAFF.length;
       this.onlineClassesCount=ONLINE_CLASSES.length;
+      this.coursCount= 5;
 
   }
 }
