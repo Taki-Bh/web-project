@@ -13,16 +13,16 @@
         </section>
         <section class="right section">
             <h2>Sign up</h2>
-            <form action="">
+            <form [formGroup]="signupform" (ngSubmit)="submit()" class="form-container">
+>
                 <label for="username">Username</label>
-                <input required class="inps" type="text" name="username" id="username"><br>
-
+                <input required class="inps" type="text" formControlName="username"><br>
                 <label for="email">Email</label>
-                <input required class="inps" type="email" name="email" id="email"><br>
+                <input required class="inps" type="email" formControlName="email"><br>
                 <label for="pass">Password</label>
-                <input required class="inps" type="password" name="pass" id="pass"><br>
+                <input required class="inps" type="password" formControlName="password"><br>
                 <label for="pass">Confirm password</label>
-                <input required class="inps" type="password" name="pass" id="pass"><br>
+                <input required class="inps" type="password" formControlName="confirmPassword"><br>
                 
                 <div class="remember">
                     <input type="checkbox"  title="remember me">
