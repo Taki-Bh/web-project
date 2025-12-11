@@ -1,34 +1,150 @@
 <section class="offres">
-    <div class="container">
-        <article class="card">
-            <h3 class="card__title">Silver</h3>
-            <ul class="card__list">
-                <li>Cours enregistrés</li>
-                <li>Fichiers PDF enregistrés</li>
-            </ul>
-            <p class="price">50DT/mois</p>
-            <button class="btn">Choisir</button>
-        </article>
-        <article class="card card--featured">
-            <h3 class="card__title">Melouel lel lekhr</h3>
-            <ul class="card__list">
-                <li>Cours enregistrés</li>
-                <li>PDFs enregistrés</li>
-                <li>Toutes les séances live</li>
-                <li>Suivie personnel</li>
-            </ul>   
-            <p class="price">Contactez-nous</p>
-            <button class="btn btn--white">Choisir</button>
-        </article>
-        <article class="card">
-            <h3 class="card__title">Gold</h3>
-            <ul class="card__list">
-                <li>Cours enregistrés</li>
-                <li>PDFs enregistrés</li>
-                <li>+ 2 live par semaine</li>
-            </ul>
-            <p class="price">70DT/mois</p>
-            <button class="btn">Choisir</button>
-        </article>
+  <div class="section-header">
+    <h2 class="section-title">Nos Offres d'Abonnement</h2>
+    <p class="section-subtitle">Choisissez la formule qui correspond à vos besoins</p>
+  </div>
+
+  <div class="container">
+    <article 
+      *ngFor="let offer of offers" 
+      class="card"
+      [class.card--featured]="offer.isFeatured"
+    >
+      <div class="badge" *ngIf="offer.badge">{{ offer.badge }}</div>
+      
+      <div class="card-header">
+        <h3 class="card__title">{{ offer.name }}</h3>
+        <div class="price-container">
+          <p class="price">{{ offer.price }}</p>
+          <p class="price-period" *ngIf="offer.price !== 'Sur mesure'">/mois</p>
+        </div>
+      </div>
+
+      <ul class="card__list">
+        <li *ngFor="let feature of offer.features">
+          <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          {{ feature }}
+        </li>
+      </ul>
+
+      <button 
+        class="btn" 
+        [class.btn--featured]="offer.isFeatured"
+        (click)="selectOffer(offer)"
+      >
+        Choisir cette offre
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14"></path>
+          <path d="m12 5 7 7-7 7"></path>
+        </svg>
+      </button>
+    </article>
+  </div>
+
+  <!-- Modal de checkout -->
+  <div *ngIf="showCheckoutModal" class="checkout-modal-overlay" (click)="closeCheckout()">
+    <div class="checkout-modal" (click)="$event.stopPropagation()">
+      <button class="close-modal-btn" (click)="closeCheckout()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <h2 class="modal-title">Finaliser votre abonnement</h2>
+        <div class="selected-offer-info">
+          <span class="offer-badge">{{ selectedOffer?.name }}</span>
+          <span class="offer-price">{{ selectedOffer?.price }}<span *ngIf="selectedOffer?.price !== 'Sur mesure'">/mois</span></span>
+        </div>
+      </div>
+
+      <form class="checkout-form">
+        <div class="form-group">
+          <label for="fullName">Nom complet <span class="required">*</span></label>
+          <input 
+            type="text" 
+            id="fullName" 
+            [(ngModel)]="checkoutForm.fullName"
+            name="fullName"
+            placeholder="Entrez votre nom complet"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input 
+            type="email" 
+            id="email" 
+            [(ngModel)]="checkoutForm.email"
+            name="email"
+            placeholder="exemple@email.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Téléphone <span class="required">*</span></label>
+          <input 
+            type="tel" 
+            id="phone" 
+            [(ngModel)]="checkoutForm.phone"
+            name="phone"
+            placeholder="+216 XX XXX XXX"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Méthode de paiement</label>
+          <div class="payment-methods">
+            <label class="payment-option">
+              <input 
+                type="radio" 
+                name="paymentMethod" 
+                value="card"
+                [(ngModel)]="checkoutForm.paymentMethod"
+              />
+              <span class="payment-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                  <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+                Carte bancaire
+              </span>
+            </label>
+            <label class="payment-option">
+              <input 
+                type="radio" 
+                name="paymentMethod" 
+                value="cash"
+                [(ngModel)]="checkoutForm.paymentMethod"
+              />
+              <span class="payment-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+                Paiement en espèces
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-summary">
+          <h4>Récapitulatif</h4>
+          <ul class="summary-list">
+            <li *ngFor="let feature of selectedOffer?.features">{{ feature }}</li>
+          </ul>
+        </div>
+
+        <button type="button" class="submit-btn" (click)="submitCheckout()">
+          Confirmer l'abonnement
+        </button>
+      </form>
     </div>
+  </div>
 </section>
