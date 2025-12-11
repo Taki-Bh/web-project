@@ -13,11 +13,12 @@
         </section>
         <section class="right section">
             <h2>Sign in</h2>
-            <form action="">
+            <form [formGroup]="loginform" (ngsubmit)="submit()">
                 <label for="email">Email</label>
-                <input required class="inps" type="email" name="email" id="email"><br>
-                <label for="pass">Password</label>
-                <input required class="inps" type="password" name="pass" id="pass"><br>
+                <input type="email" formControlName="email"><br>
+                <label for="pass">Password</label> 
+                <input type="password" formControlName="password"><br>
+                <button type="submit">Login</button>
                 <div class="remember">
                     <input type="checkbox"  title="remember me">
                     <label for="rm" style="font-size: 1rem;">remember me</label>

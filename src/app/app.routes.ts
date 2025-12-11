@@ -35,14 +35,18 @@ export const routes: Routes = [
     },
     {
         path: "login",
+    },{
+        path:"login",
         component: Login
     },
     {
         path: "signup",
         component: Signup
+
     },
     {
         path:'',
         component:Home
+
     }
 ];
