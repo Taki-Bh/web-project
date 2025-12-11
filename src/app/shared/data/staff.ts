@@ -1,9 +1,9 @@
 export const PROFS = [
   
-  { id: 101, name: 'Dr. Sophie Martin', subject: 'Mathématiques', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'blue', role: 'Professor' },
+  { id: 101, name: 'Dr. Mouaddeb Ghazi', subject: 'Mathématiques', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'blue', role: 'Professor' },
   { id: 102, name: 'Prof. Ahmed Ben Ali', subject: 'Physique', schedule: ['Mardi', 'Jeudi'], color: 'purple', role: 'Professor' },
   { id: 103, name: 'Dr. Marie Dubois', subject: 'Chimie', schedule: ['Lundi', 'Mercredi'], color: 'green', role: 'Professor' },
-  { id: 104, name: 'Prof. Karim Mansour', subject: 'Informatique', schedule: ['Mardi', 'Jeudi', 'Samedi'], color: 'orange', role: 'Professor' },
+  { id: 104, name: 'Prof. Mohamed LASSOUED', subject: 'Informatique', schedule: ['Mardi', 'Jeudi', 'Samedi'], color: 'orange', role: 'Professor' },
   { id: 105, name: 'Dr. Leila Trabelsi', subject: 'Biologie', schedule: ['Mercredi', 'Vendredi'], color: 'lime', role: 'Professor' },
   { id: 106, name: 'Prof. Jean Rousseau', subject: 'Anglais', schedule: ['Lundi', 'Mardi', 'Jeudi'], color: 'indigo', role: 'Professor' },
   { id: 107, name: 'Dr. Nadia Ben Salem', subject: 'Histoire', schedule: ['Biol., Géo., Histoire'], color: 'teal', role: 'Professor' },
@@ -40,18 +40,10 @@ export const PROFS = [
   { id: 138, name: 'Prof. Moncef Hajji', subject: 'Sport Collectif', schedule: ['Lundi', 'Jeudi', 'Vendredi'], color: 'darkorange', role: 'Professor' },
   { id: 139, name: 'Dr. Fares Sassi', subject: 'Urbanisme', schedule: ['Mardi'], color: 'olivedrab', role: 'Professor' },
   { id: 140, name: 'Prof. Sihem Fakhfakh', subject: 'Pédagogie', schedule: ['Mercredi'], color: 'hotpink', role: 'Professor' },
-  { id: 141, name: 'Dr. Wajih Gharbi', subject: 'Mathématiques', schedule: ['Lundi', 'Samedi'], color: 'royalblue', role: 'Professor' }, // Redondance: Mathématiques (avec 101, 134)
-    { id: 142, name: 'M. Sofiane Jebali', subject: 'Support Technique (Niveau 1)', schedule: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'], color: 'dimgray', role: 'Support' },
-  { id: 143, name: 'Mme. Amira Louati', subject: 'Gestion de la Plateforme (LMS)', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'darkslateblue', role: 'Support' },
-  { id: 144, name: 'M. Khaled Said', subject: 'Maintenance Serveurs & Réseau', schedule: ['Lundi', 'Mardi', 'Samedi'], color: 'teal', role: 'Support' },
-  { id: 145, name: 'Mme. Sarah Guedes', subject: 'Soutien Pédagogique (e-learning)', schedule: ['Mardi', 'Jeudi', 'Vendredi'], color: 'skyblue', role: 'Support' },
-  { id: 146, name: 'M. Fathi Jlassi', subject: 'Sécurité Informatique & Data', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'black', role: 'Support' },
-  { id: 147, name: 'Mme. Nadia Gharbi', subject: 'Communication & Contenu Web', schedule: ['Mardi', 'Mercredi', 'Jeudi'], color: 'orchid', role: 'Support' },
-  { id: 148, name: 'M. Ali Hamdi', subject: 'Support Vidéo & Multimédia', schedule: ['Lundi', 'Jeudi'], color: 'saddlebrown', role: 'Support' },
-  { id: 149, name: 'Mme. Mona Khemakhem', subject: 'Administration Générale (RH)', schedule: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'], color: 'gray', role: 'Support' },
-  { id: 150, name: 'M. Lamine Sassi', subject: 'Assurance Qualité (QA)', schedule: ['Mercredi', 'Jeudi', 'Samedi'], color: 'darkolivegreen', role: 'Support' },
-];
-export const SUPPORT = [
+  { id: 141, name: 'Dr. Wajih Gharbi', subject: 'Mathématiques', schedule: ['Lundi', 'Samedi'], color: 'royalblue', role: 'Professor' }, ]
+
+
+  export const SUPPORT = [
    { id: 142, name: 'M. Sofiane Jebali', subject: 'Support Technique (Niveau 1)', schedule: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'], color: 'dimgray', role: 'Support' },
   { id: 143, name: 'Mme. Amira Louati', subject: 'Gestion de la Plateforme (LMS)', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'darkslateblue', role: 'Support' },
   { id: 144, name: 'M. Khaled Said', subject: 'Maintenance Serveurs & Réseau', schedule: ['Lundi', 'Mardi', 'Samedi'], color: 'teal', role: 'Support' },

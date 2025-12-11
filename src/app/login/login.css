@@ -3,6 +3,7 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     margin: 0;
+    color: white;
     padding: 0;
 }
 /* --- Component/Main Container Styles --- */
@@ -44,7 +45,7 @@
 
 .left.section {
     flex: 1; /* Takes up equal space */
-    background-color: #007bff; /* Primary blue from the original design */
+    background: linear-gradient(135deg, #007bffc2 0%, #004c9c 100%);
     color: white;
 }
 

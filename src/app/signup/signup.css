@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color:white;
 }
 /* --- Component/Main Container Styles (Identical to Login) --- */
 
@@ -45,8 +46,7 @@
 
 .left.section {
     flex: 1;
-    background-color: #007bff; /* Primary blue from the original design */
-    color: white;
+    background: linear-gradient(135deg, #007bffc2 0%, #004c9c 100%);    color: white;
 }
 
 .left.section h1 {

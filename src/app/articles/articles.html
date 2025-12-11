@@ -50,7 +50,7 @@
       
       <div class="article-content">
         <div class="article-meta">
-          <span class="author">{{ article.author }}</span>
+          <span class="author">{{ getProfessorName(article.instructorId) }}</span>
           <span class="separator">•</span>
           <span class="date">{{ formatDate(article.date) }}</span>
           <span class="separator">•</span>
@@ -95,7 +95,7 @@
         <span class="modal-category-badge">{{ selectedArticle?.category }}</span>
         <h2 class="modal-title">{{ selectedArticle?.title }}</h2>
         <div class="modal-meta">
-          <span class="modal-author">{{ selectedArticle?.author }}</span>
+          <span class="modal-author">{{ getProfessorName(selectedArticle!.instructorId) }}</span>
           <span class="separator">•</span>
           <span class="modal-date">{{ formatDate(selectedArticle!.date) }}</span>
           <span class="separator">•</span>
