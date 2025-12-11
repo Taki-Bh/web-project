@@ -1,1 +1,55 @@
-<p>staff works!</p>
+<div class="container">
+  <div class="header">
+    <h1>Nos Professeurs</h1>
+    <p>Découvrez nos enseignants et leurs horaires de cours en direct</p>
+  </div>
+
+  <!-- Contrôles filtre + tri -->
+  <div class="controls">
+    <input type="text" [(ngModel)]="searchText" (input)="filterAndSort()" placeholder="Rechercher par nom ou matière">
+    <select [(ngModel)]="sortField" (change)="filterAndSort()">
+      <option value="name">Nom</option>
+      <option value="subject">Matière</option>
+    </select>
+    <select [(ngModel)]="sortDirection" (change)="filterAndSort()">
+      <option value="asc">Croissant</option>
+      <option value="desc">Décroissant</option>
+    </select>
+  </div>
+
+  <!-- Grid professeurs -->
+  <div class="professeurs-grid">
+    <div class="prof-card" *ngFor="let prof of filteredProfessors.slice((page-1)*pageSize, page*pageSize)">
+      <div class="card-header" [ngClass]="prof.color"></div>
+      <div class="card-body">
+        <div class="avatar-container">
+          <div class="avatar" [ngClass]="prof.color">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <h2 class="prof-name">{{ prof.name }}</h2>
+        <div class="matiere-section">
+          <i class="fas fa-book"></i>
+          <span class="matiere-text">{{ prof.subject }}</span>
+        </div>
+        <div class="divider"></div>
+        <div class="jours-section">
+          <i class="fas fa-calendar calendar-icon"></i>
+          <div class="jours-content">
+            <p class="jours-label">Séances en direct:</p>
+            <div class="jours-tags">
+              <span class="jour-tag" [ngClass]="prof.color" *ngFor="let day of prof.schedule">{{ day }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <button (click)="prevPage()" [disabled]="page === 1">Précédent</button>
+    <span>Page {{ page }}</span>
+    <button (click)="nextPage()" [disabled]="page * pageSize >= filteredProfessors.length">Suivant</button>
+  </div>
+</div>

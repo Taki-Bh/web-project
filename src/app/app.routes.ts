@@ -7,8 +7,6 @@ import { Articles } from './articles/articles';
 import { Home } from './home/home';
 import { Login } from './login/login';
 import { Signup } from './signup/signup';
-
-
 export const routes: Routes = [
     {
         path: "about",
@@ -25,7 +23,8 @@ export const routes: Routes = [
     {
         path: "offers",
         component: Offers
-    },{
+    },
+    {
         path: "articles",
         component: Articles
     },
@@ -40,6 +39,7 @@ export const routes: Routes = [
     {
         path: "signup",
         component: Signup
+
     },
     {
         path:"",
