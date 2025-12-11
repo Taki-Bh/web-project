@@ -1,23 +1,65 @@
-export const STAFF = [
-  { id: 1, name: 'Dr. Sophie Martin', subject: 'Mathématiques', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'blue' },
-    { id: 2, name: 'Prof. Ahmed Ben Ali', subject: 'Physique', schedule: ['Mardi', 'Jeudi'], color: 'purple' },
-    { id: 3, name: 'Dr. Marie Dubois', subject: 'Chimie', schedule: ['Lundi', 'Mercredi'], color: 'green' },
-    { id: 4, name: 'Prof. Karim Mansour', subject: 'Informatique', schedule: ['Mardi', 'Jeudi', 'Samedi'], color: 'orange' },
-    { id: 5, name: 'Dr. Leila Trabelsi', subject: 'Biologie', schedule: ['Mercredi', 'Vendredi'], color: 'lime' },
-    { id: 6, name: 'Prof. Jean Rousseau', subject: 'Anglais', schedule: ['Lundi', 'Mardi', 'Jeudi'], color: 'indigo' },
-    { id: 7, name: 'Dr. Nadia Ben Salem', subject: 'Histoire', schedule: ['Mardi', 'Vendredi'], color: 'teal' },
-    { id: 8, name: 'Prof. Youssef Hammami', subject: 'Géographie', schedule: ['Lundi', 'Jeudi'], color: 'cyan' },
-    { id: 9, name: 'Dr. Claire Dupont', subject: 'Philosophie', schedule: ['Mercredi'], color: 'pink' },
-    { id: 10, name: 'Prof. Sami Khemiri', subject: 'Économie', schedule: ['Mardi', 'Jeudi'], color: 'goldenrod' },   // amber
-    { id: 11, name: 'Dr. Elise Laurent', subject: 'Sociologie', schedule: ['Lundi', 'Vendredi'], color: 'lightcoral' }, // rose
-    { id: 12, name: 'Prof. Hichem Jaziri', subject: 'Technologie', schedule: ['Mardi', 'Samedi'], color: 'red' },
-    { id: 13, name: 'Dr. Inès Chouikha', subject: 'Statistiques', schedule: ['Mercredi', 'Jeudi'], color: 'seagreen' }, // emerald
-    { id: 14, name: 'Prof. Lucas Bernard', subject: 'Littérature Française', schedule: ['Lundi', 'Mercredi'], color: 'slategray' }, // slate
-    { id: 15, name: 'Dr. Yazid L.Bouzid', subject: 'Psychologie', schedule: ['Jeudi'], color: 'violet' },
-    { id: 16, name: 'Prof. Rayan Messaoud', subject: 'Musique', schedule: ['Mardi', 'Vendredi'], color: 'yellow' },
-    { id: 17, name: 'Dr. Fatma Chaabane', subject: 'Sciences de la Terre', schedule: ['Lundi', 'Jeudi'], color: 'green' },
-    { id: 18, name: 'Prof. Pierre Roland', subject: 'Latin', schedule: ['Mercredi', 'Vendredi'], color: 'brown' },
-    { id: 19, name: 'Dr. Hana Jebali', subject: 'Architecture', schedule: ['Mardi'], color: 'fuchsia' },
-    { id: 20, name: 'Prof. Hamma Hcine', subject: 'Sport', schedule: ['Lundi', 'Jeudi', 'Samedi'], color: 'lime' },
-    { id: 21, name: 'Dr. Laura Petit', subject: 'Arts Plastiques', schedule: ['Mercredi'], color: 'lightskyblue' }, // sky
+export const PROFS = [
+  
+  { id: 101, name: 'Dr. Sophie Martin', subject: 'Mathématiques', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'blue', role: 'Professor' },
+  { id: 102, name: 'Prof. Ahmed Ben Ali', subject: 'Physique', schedule: ['Mardi', 'Jeudi'], color: 'purple', role: 'Professor' },
+  { id: 103, name: 'Dr. Marie Dubois', subject: 'Chimie', schedule: ['Lundi', 'Mercredi'], color: 'green', role: 'Professor' },
+  { id: 104, name: 'Prof. Karim Mansour', subject: 'Informatique', schedule: ['Mardi', 'Jeudi', 'Samedi'], color: 'orange', role: 'Professor' },
+  { id: 105, name: 'Dr. Leila Trabelsi', subject: 'Biologie', schedule: ['Mercredi', 'Vendredi'], color: 'lime', role: 'Professor' },
+  { id: 106, name: 'Prof. Jean Rousseau', subject: 'Anglais', schedule: ['Lundi', 'Mardi', 'Jeudi'], color: 'indigo', role: 'Professor' },
+  { id: 107, name: 'Dr. Nadia Ben Salem', subject: 'Histoire', schedule: ['Biol., Géo., Histoire'], color: 'teal', role: 'Professor' },
+  { id: 108, name: 'Prof. Youssef Hammami', subject: 'Géographie', schedule: ['Lundi', 'Jeudi'], color: 'cyan', role: 'Professor' },
+  { id: 109, name: 'Dr. Claire Dupont', subject: 'Philosophie', schedule: ['Mercredi'], color: 'pink', role: 'Professor' },
+  { id: 110, name: 'Prof. Sami Khemiri', subject: 'Économie', schedule: ['Mardi', 'Jeudi'], color: 'goldenrod', role: 'Professor' },
+  { id: 111, name: 'Dr. Elise Laurent', subject: 'Sociologie', schedule: ['Lundi', 'Vendredi'], color: 'lightcoral', role: 'Professor' },
+  { id: 112, name: 'Prof. Hichem Jaziri', subject: 'Technologie', schedule: ['Mardi', 'Samedi'], color: 'red', role: 'Professor' },
+  { id: 113, name: 'Dr. Inès Chouikha', subject: 'Statistiques', schedule: ['Mercredi', 'Jeudi'], color: 'seagreen', role: 'Professor' },
+  { id: 114, name: 'Prof. Lucas Bernard', subject: 'Littérature Française', schedule: ['Lundi', 'Mercredi'], color: 'slategray', role: 'Professor' },
+  { id: 115, name: 'Dr. Yazid L.Bouzid', subject: 'Psychologie', schedule: ['Jeudi'], color: 'violet', role: 'Professor' },
+  { id: 116, name: 'Prof. Rayan Messaoud', subject: 'Musique', schedule: ['Mardi', 'Vendredi'], color: 'yellow', role: 'Professor' },
+  { id: 117, name: 'Dr. Fatma Chaabane', subject: 'Sciences de la Terre', schedule: ['Lundi', 'Jeudi'], color: 'green', role: 'Professor' },
+  { id: 118, name: 'Prof. Pierre Roland', subject: 'Latin', schedule: ['Mercredi', 'Vendredi'], color: 'brown', role: 'Professor' },
+  { id: 119, name: 'Dr. Hana Jebali', subject: 'Architecture', schedule: ['Mardi'], color: 'fuchsia', role: 'Professor' },
+  { id: 120, name: 'Prof. Hamma Hcine', subject: 'Sport', schedule: ['Lundi', 'Jeudi', 'Samedi'], color: 'lime', role: 'Professor' },
+  { id: 121, name: 'Dr. Laura Petit', subject: 'Arts Plastiques', schedule: ['Mercredi'], color: 'lightskyblue', role: 'Professor' },
+  { id: 122, name: 'Prof. Samir Bouaziz', subject: 'Droit', schedule: ['Lundi', 'Vendredi'], color: 'darkred', role: 'Professor' },
+  { id: 123, name: 'Dr. Amel Cherif', subject: 'Arabe Classique', schedule: ['Mardi', 'Mercredi'], color: 'maroon', role: 'Professor' },
+  { id: 124, name: 'Prof. Marc Delacroix', subject: 'Allemand', schedule: ['Mardi', 'Jeudi'], color: 'gold', role: 'Professor' },
+  { id: 125, name: 'Dr. Salma Ayari', subject: 'Génie Civil', schedule: ['Lundi', 'Samedi'], color: 'sienna', role: 'Professor' },
+  { id: 126, name: 'Prof. Kamel Sghaier', subject: 'Éducation Civique', schedule: ['Mercredi', 'Vendredi'], color: 'navy', role: 'Professor' },
+  { id: 127, name: 'Dr. Chaima Fourati', subject: 'Microéconomie', schedule: ['Lundi', 'Mardi'], color: 'olive', role: 'Professor' },
+  { id: 128, name: 'Prof. David Lefevre', subject: 'Anglais', schedule: ['Jeudi', 'Vendredi'], color: 'salmon', role: 'Professor' }, // Redondance: Anglais (avec 106)
+  { id: 129, name: 'Dr. Zied Boughanmi', subject: 'Informatique', schedule: ['Mercredi', 'Samedi'], color: 'darkcyan', role: 'Professor' }, // Redondance: Informatique (avec 104)
+  { id: 130, name: 'Prof. Sarah Dupont', subject: 'Chimie', schedule: ['Mardi', 'Jeudi'], color: 'darkmagenta', role: 'Professor' }, // Redondance: Chimie (avec 103)
+  { id: 131, name: 'Dr. Rania Kallel', subject: 'Histoire de l\'Art', schedule: ['Lundi'], color: 'peru', role: 'Professor' },
+  { id: 132, name: 'Prof. Ali Majdoub', subject: 'Physique', schedule: ['Mercredi', 'Vendredi'], color: 'slateblue', role: 'Professor' }, // Redondance: Physique (avec 102)
+  { id: 133, name: 'Dr. Sonia Oueslati', subject: 'Macroéconomie', schedule: ['Mardi', 'Mercredi', 'Jeudi'], color: 'chocolate', role: 'Professor' },
+  { id: 134, name: 'Prof. Tarek Hachicha', subject: 'Mathématiques', schedule: ['Lundi', 'Vendredi'], color: 'mediumblue', role: 'Professor' }, // Redondance: Mathématiques (avec 101)
+  { id: 135, name: 'Dr. Yasmine Ghozzi', subject: 'Génie Électrique', schedule: ['Mardi', 'Samedi'], color: 'darkgreen', role: 'Professor' },
+  { id: 136, name: 'Prof. Noureddine Jlassi', subject: 'Littérature Comparée', schedule: ['Jeudi'], color: 'firebrick', role: 'Professor' },
+  { id: 137, name: 'Dr. Cyrine Mzali', subject: 'Astronomie', schedule: ['Mercredi', 'Vendredi'], color: 'indigo', role: 'Professor' },
+  { id: 138, name: 'Prof. Moncef Hajji', subject: 'Sport Collectif', schedule: ['Lundi', 'Jeudi', 'Vendredi'], color: 'darkorange', role: 'Professor' },
+  { id: 139, name: 'Dr. Fares Sassi', subject: 'Urbanisme', schedule: ['Mardi'], color: 'olivedrab', role: 'Professor' },
+  { id: 140, name: 'Prof. Sihem Fakhfakh', subject: 'Pédagogie', schedule: ['Mercredi'], color: 'hotpink', role: 'Professor' },
+  { id: 141, name: 'Dr. Wajih Gharbi', subject: 'Mathématiques', schedule: ['Lundi', 'Samedi'], color: 'royalblue', role: 'Professor' }, // Redondance: Mathématiques (avec 101, 134)
+    { id: 142, name: 'M. Sofiane Jebali', subject: 'Support Technique (Niveau 1)', schedule: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'], color: 'dimgray', role: 'Support' },
+  { id: 143, name: 'Mme. Amira Louati', subject: 'Gestion de la Plateforme (LMS)', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'darkslateblue', role: 'Support' },
+  { id: 144, name: 'M. Khaled Said', subject: 'Maintenance Serveurs & Réseau', schedule: ['Lundi', 'Mardi', 'Samedi'], color: 'teal', role: 'Support' },
+  { id: 145, name: 'Mme. Sarah Guedes', subject: 'Soutien Pédagogique (e-learning)', schedule: ['Mardi', 'Jeudi', 'Vendredi'], color: 'skyblue', role: 'Support' },
+  { id: 146, name: 'M. Fathi Jlassi', subject: 'Sécurité Informatique & Data', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'black', role: 'Support' },
+  { id: 147, name: 'Mme. Nadia Gharbi', subject: 'Communication & Contenu Web', schedule: ['Mardi', 'Mercredi', 'Jeudi'], color: 'orchid', role: 'Support' },
+  { id: 148, name: 'M. Ali Hamdi', subject: 'Support Vidéo & Multimédia', schedule: ['Lundi', 'Jeudi'], color: 'saddlebrown', role: 'Support' },
+  { id: 149, name: 'Mme. Mona Khemakhem', subject: 'Administration Générale (RH)', schedule: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'], color: 'gray', role: 'Support' },
+  { id: 150, name: 'M. Lamine Sassi', subject: 'Assurance Qualité (QA)', schedule: ['Mercredi', 'Jeudi', 'Samedi'], color: 'darkolivegreen', role: 'Support' },
 ];
+export const SUPPORT = [
+   { id: 142, name: 'M. Sofiane Jebali', subject: 'Support Technique (Niveau 1)', schedule: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'], color: 'dimgray', role: 'Support' },
+  { id: 143, name: 'Mme. Amira Louati', subject: 'Gestion de la Plateforme (LMS)', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'darkslateblue', role: 'Support' },
+  { id: 144, name: 'M. Khaled Said', subject: 'Maintenance Serveurs & Réseau', schedule: ['Lundi', 'Mardi', 'Samedi'], color: 'teal', role: 'Support' },
+  { id: 145, name: 'Mme. Sarah Guedes', subject: 'Soutien Pédagogique (e-learning)', schedule: ['Mardi', 'Jeudi', 'Vendredi'], color: 'skyblue', role: 'Support' },
+  { id: 146, name: 'M. Fathi Jlassi', subject: 'Sécurité Informatique & Data', schedule: ['Lundi', 'Mercredi', 'Vendredi'], color: 'black', role: 'Support' },
+  { id: 147, name: 'Mme. Nadia Gharbi', subject: 'Communication & Contenu Web', schedule: ['Mardi', 'Mercredi', 'Jeudi'], color: 'orchid', role: 'Support' },
+  { id: 148, name: 'M. Ali Hamdi', subject: 'Support Vidéo & Multimédia', schedule: ['Lundi', 'Jeudi'], color: 'saddlebrown', role: 'Support' },
+  { id: 149, name: 'Mme. Mona Khemakhem', subject: 'Administration Générale (RH)', schedule: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'], color: 'gray', role: 'Support' },
+  { id: 150, name: 'M. Lamine Sassi', subject: 'Assurance Qualité (QA)', schedule: ['Mercredi', 'Jeudi', 'Samedi'], color: 'darkolivegreen', role: 'Support' },
+
+]

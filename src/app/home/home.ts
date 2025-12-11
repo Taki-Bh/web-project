@@ -3,10 +3,10 @@ import { MainBanner } from "../shared/main-banner/main-banner";
 import { HomeIntro } from "../shared/home-intro/home-intro";
 import { Dashboard } from "../shared/dashboard/dashboard";
 import { Ad1 } from "../shared/ad1/ad1";
-
+import { RegisterBtn } from '../shared/register-btn/register-btn';
 @Component({
   selector: 'app-home',
-  imports: [MainBanner, HomeIntro, Dashboard, Ad1],
+  imports: [MainBanner, HomeIntro, Dashboard, Ad1,RegisterBtn],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

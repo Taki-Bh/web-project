@@ -5,10 +5,11 @@
     padding: 2rem;
 }
 :host{
-    background:url(../../../public/Logo.jfif);
-    background-size: contain;
+    background:linear-gradient(rgba(20, 20, 20, 0.747),rgb(134, 134, 134),rgba(255, 255, 255, 0.562)), url(../../../public/Logo.jfif);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-position-y: center;
 }
 /* Header */
 .header {
@@ -82,6 +83,7 @@
     height: 8px;
 }
 
+/* Couleurs existantes */
 .card-header.blue { background: linear-gradient(90deg, #3b82f6, #06b6d4); }
 .card-header.purple { background: linear-gradient(90deg, #a855f7, #ec4899); }
 .card-header.green { background: linear-gradient(90deg, #10b981, #14b8a6); }
@@ -93,6 +95,7 @@
 .card-header.pink { background: linear-gradient(90deg, #ec4899, #f472b6); }
 .card-header.goldenrod { background: linear-gradient(90deg, #fbbf24, #d97706); }
 .card-header.lightcoral { background: linear-gradient(90deg, #f87171, #fb7185); }
+.card-header.red { background: linear-gradient(90deg, #dc2626, #f87171); } /* Correction/Ajout de 'red' */
 .card-header.seagreen { background: linear-gradient(90deg, #059669, #10b981); }
 .card-header.slategray { background: linear-gradient(90deg, #64748b, #475569); }
 .card-header.violet { background: linear-gradient(90deg, #8b5cf6, #a855f7); }
@@ -100,6 +103,29 @@
 .card-header.brown { background: linear-gradient(90deg, #92400e, #b45309); }
 .card-header.fuchsia { background: linear-gradient(90deg, #d946ef, #f0abfc); }
 .card-header.lightskyblue { background: linear-gradient(90deg, #38bdf8, #0ea5e9); }
+
+/* NOUVELLES COULEURS AJOUTÉES */
+.card-header.darkred { background: linear-gradient(90deg, #8b0000, #a52a2a); }
+.card-header.maroon { background: linear-gradient(90deg, #800000, #c40000); }
+.card-header.gold { background: linear-gradient(90deg, #ffd700, #ffc400); }
+.card-header.sienna { background: linear-gradient(90deg, #a0522d, #cd853f); }
+.card-header.navy { background: linear-gradient(90deg, #000080, #191970); }
+.card-header.olive { background: linear-gradient(90deg, #808000, #c8c800); }
+.card-header.salmon { background: linear-gradient(90deg, #fa8072, #ff7f50); }
+.card-header.darkcyan { background: linear-gradient(90deg, #008b8b, #00ced1); }
+.card-header.darkmagenta { background: linear-gradient(90deg, #8b008b, #c71585); }
+.card-header.peru { background: linear-gradient(90deg, #cd853f, #d2b48c); }
+.card-header.slateblue { background: linear-gradient(90deg, #6a5acd, #836fff); }
+.card-header.chocolate { background: linear-gradient(90deg, #d2691e, #a0522d); }
+.card-header.mediumblue { background: linear-gradient(90deg, #0000cd, #4169e1); }
+.card-header.darkgreen { background: linear-gradient(90deg, #006400, #228b22); }
+.card-header.firebrick { background: linear-gradient(90deg, #b22222, #cd5c5c); }
+.card-header.hotpink { background: linear-gradient(90deg, #ff69b4, #ffb6c1); }
+.card-header.olivedrab { background: linear-gradient(90deg, #6b8e23, #9acd32); }
+.card-header.darkorange { background: linear-gradient(90deg, #ff8c00, #ffa500); }
+.card-header.royalblue { background: linear-gradient(90deg, #4169e1, #6495ed); }
+.card-header.lime-new { background: linear-gradient(90deg, #00ff00, #32cd32); }
+
 
 /* Corps de la carte */
 .card-body {
@@ -128,6 +154,7 @@
     color: white;
 }
 
+/* Couleurs existantes (Avatar) */
 .avatar.blue { background: linear-gradient(135deg, #3b82f6, #06b6d4); }
 .avatar.purple { background: linear-gradient(135deg, #a855f7, #ec4899); }
 .avatar.green { background: linear-gradient(135deg, #10b981, #14b8a6); }
@@ -139,6 +166,7 @@
 .avatar.pink { background: linear-gradient(135deg, #ec4899, #f472b6); }
 .avatar.goldenrod { background: linear-gradient(135deg, #fbbf24, #d97706); }
 .avatar.lightcoral { background: linear-gradient(135deg, #f87171, #fb7185); }
+.avatar.red { background: linear-gradient(135deg, #dc2626, #f87171); } /* Correction/Ajout de 'red' */
 .avatar.seagreen { background: linear-gradient(135deg, #059669, #10b981); }
 .avatar.slategray { background: linear-gradient(135deg, #64748b, #475569); }
 .avatar.violet { background: linear-gradient(135deg, #8b5cf6, #a855f7); }
@@ -146,6 +174,29 @@
 .avatar.brown { background: linear-gradient(135deg, #92400e, #b45309); }
 .avatar.fuchsia { background: linear-gradient(135deg, #d946ef, #f0abfc); }
 .avatar.lightskyblue { background: linear-gradient(135deg, #38bdf8, #0ea5e9); }
+
+/* NOUVELLES COULEURS AJOUTÉES (Avatar) */
+.avatar.darkred { background: linear-gradient(135deg, #8b0000, #a52a2a); }
+.avatar.maroon { background: linear-gradient(135deg, #800000, #c40000); }
+.avatar.gold { background: linear-gradient(135deg, #ffd700, #ffc400); }
+.avatar.sienna { background: linear-gradient(135deg, #a0522d, #cd853f); }
+.avatar.navy { background: linear-gradient(135deg, #000080, #191970); }
+.avatar.olive { background: linear-gradient(135deg, #808000, #c8c800); }
+.avatar.salmon { background: linear-gradient(135deg, #fa8072, #ff7f50); }
+.avatar.darkcyan { background: linear-gradient(135deg, #008b8b, #00ced1); }
+.avatar.darkmagenta { background: linear-gradient(135deg, #8b008b, #c71585); }
+.avatar.peru { background: linear-gradient(135deg, #cd853f, #d2b48c); }
+.avatar.slateblue { background: linear-gradient(135deg, #6a5acd, #836fff); }
+.avatar.chocolate { background: linear-gradient(135deg, #d2691e, #a0522d); }
+.avatar.mediumblue { background: linear-gradient(135deg, #0000cd, #4169e1); }
+.avatar.darkgreen { background: linear-gradient(135deg, #006400, #228b22); }
+.avatar.firebrick { background: linear-gradient(135deg, #b22222, #cd5c5c); }
+.avatar.hotpink { background: linear-gradient(135deg, #ff69b4, #ffb6c1); }
+.avatar.olivedrab { background: linear-gradient(135deg, #6b8e23, #9acd32); }
+.avatar.darkorange { background: linear-gradient(135deg, #ff8c00, #ffa500); }
+.avatar.royalblue { background: linear-gradient(135deg, #4169e1, #6495ed); }
+.avatar.lime-new { background: linear-gradient(135deg, #00ff00, #32cd32); }
+
 
 /* Nom professeur */
 .prof-name {
@@ -220,6 +271,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Couleurs existantes (Jour Tag) */
 .jour-tag.blue { background: linear-gradient(90deg, #3b82f6, #06b6d4); }
 .jour-tag.purple { background: linear-gradient(90deg, #a855f7, #ec4899); }
 .jour-tag.green { background: linear-gradient(90deg, #10b981, #14b8a6); }
@@ -231,6 +283,7 @@
 .jour-tag.pink { background: linear-gradient(90deg, #ec4899, #f472b6); }
 .jour-tag.goldenrod { background: linear-gradient(90deg, #fbbf24, #d97706); }
 .jour-tag.lightcoral { background: linear-gradient(90deg, #f87171, #fb7185); }
+.jour-tag.red { background: linear-gradient(90deg, #dc2626, #f87171); } /* Correction/Ajout de 'red' */
 .jour-tag.seagreen { background: linear-gradient(90deg, #059669, #10b981); }
 .jour-tag.slategray { background: linear-gradient(90deg, #64748b, #475569); }
 .jour-tag.violet { background: linear-gradient(90deg, #8b5cf6, #a855f7); }
@@ -238,6 +291,28 @@
 .jour-tag.brown { background: linear-gradient(90deg, #92400e, #b45309); }
 .jour-tag.fuchsia { background: linear-gradient(90deg, #d946ef, #f0abfc); }
 .jour-tag.lightskyblue { background: linear-gradient(90deg, #38bdf8, #0ea5e9); }
+
+/* NOUVELLES COULEURS AJOUTÉES (Jour Tag) */
+.jour-tag.darkred { background: linear-gradient(90deg, #8b0000, #a52a2a); }
+.jour-tag.maroon { background: linear-gradient(90deg, #800000, #c40000); }
+.jour-tag.gold { background: linear-gradient(90deg, #ffd700, #ffc400); }
+.jour-tag.sienna { background: linear-gradient(90deg, #a0522d, #cd853f); }
+.jour-tag.navy { background: linear-gradient(90deg, #000080, #191970); }
+.jour-tag.olive { background: linear-gradient(90deg, #808000, #c8c800); }
+.jour-tag.salmon { background: linear-gradient(90deg, #fa8072, #ff7f50); }
+.jour-tag.darkcyan { background: linear-gradient(90deg, #008b8b, #00ced1); }
+.jour-tag.darkmagenta { background: linear-gradient(90deg, #8b008b, #c71585); }
+.jour-tag.peru { background: linear-gradient(90deg, #cd853f, #d2b48c); }
+.jour-tag.slateblue { background: linear-gradient(90deg, #6a5acd, #836fff); }
+.jour-tag.chocolate { background: linear-gradient(90deg, #d2691e, #a0522d); }
+.jour-tag.mediumblue { background: linear-gradient(90deg, #0000cd, #4169e1); }
+.jour-tag.darkgreen { background: linear-gradient(90deg, #006400, #228b22); }
+.jour-tag.firebrick { background: linear-gradient(90deg, #b22222, #cd5c5c); }
+.jour-tag.hotpink { background: linear-gradient(90deg, #ff69b4, #ffb6c1); }
+.jour-tag.olivedrab { background: linear-gradient(90deg, #6b8e23, #9acd32); }
+.jour-tag.darkorange { background: linear-gradient(90deg, #ff8c00, #ffa500); }
+.jour-tag.royalblue { background: linear-gradient(90deg, #4169e1, #6495ed); }
+.jour-tag.lime-new { background: linear-gradient(90deg, #00ff00, #32cd32); }
 
 
 /* Pagination */
@@ -262,3 +337,101 @@
     opacity: 0.5;
     cursor: not-allowed;
 }
+/* --- NOUVELLES COULEURS (Card Header: IDs 122 à 150) --- */
+
+/* Couleurs des Professeurs 122-141 (Rappel pour exhaustivité) */
+.card-header.darkred { background: linear-gradient(90deg, #8b0000, #a52a2a); }
+.card-header.maroon { background: linear-gradient(90deg, #800000, #c40000); }
+.card-header.gold { background: linear-gradient(90deg, #ffd700, #ffc400); }
+.card-header.sienna { background: linear-gradient(90deg, #a0522d, #cd853f); }
+.card-header.navy { background: linear-gradient(90deg, #000080, #191970); }
+.card-header.olive { background: linear-gradient(90deg, #808000, #c8c800); }
+.card-header.salmon { background: linear-gradient(90deg, #fa8072, #ff7f50); }
+.card-header.darkcyan { background: linear-gradient(90deg, #008b8b, #00ced1); }
+.card-header.darkmagenta { background: linear-gradient(90deg, #8b008b, #c71585); }
+.card-header.peru { background: linear-gradient(90deg, #cd853f, #d2b48c); }
+.card-header.slateblue { background: linear-gradient(90deg, #6a5acd, #836fff); }
+.card-header.chocolate { background: linear-gradient(90deg, #d2691e, #a0522d); }
+.card-header.mediumblue { background: linear-gradient(90deg, #0000cd, #4169e1); }
+.card-header.darkgreen { background: linear-gradient(90deg, #006400, #228b22); }
+.card-header.firebrick { background: linear-gradient(90deg, #b22222, #cd5c5c); }
+.card-header.hotpink { background: linear-gradient(90deg, #ff69b4, #ffb6c1); }
+.card-header.olivedrab { background: linear-gradient(90deg, #6b8e23, #9acd32); }
+.card-header.darkorange { background: linear-gradient(90deg, #ff8c00, #ffa500); }
+.card-header.royalblue { background: linear-gradient(90deg, #4169e1, #6495ed); }
+
+/* Couleurs du Personnel de Soutien 142-150 */
+.card-header.dimgray { background: linear-gradient(90deg, #696969, #a9a9a9); }
+.card-header.darkslateblue { background: linear-gradient(90deg, #483d8b, #6a5acd); }
+.card-header.skyblue { background: linear-gradient(90deg, #87ceeb, #00bfff); }
+.card-header.black { background: linear-gradient(90deg, #000000, #333333); }
+.card-header.orchid { background: linear-gradient(90deg, #da70d6, #ffb6c1); }
+.card-header.saddlebrown { background: linear-gradient(90deg, #8b4513, #a0522d); }
+.card-header.gray { background: linear-gradient(90deg, #808080, #c0c0c0); }
+.card-header.darkolivegreen { background: linear-gradient(90deg, #556b2f, #6b8e23); }
+
+/* --- NOUVELLES COULEURS (Avatar) --- */
+
+/* Couleurs des Professeurs 122-141 (Rappel pour exhaustivité) */
+.avatar.darkred { background: linear-gradient(135deg, #8b0000, #a52a2a); }
+.avatar.maroon { background: linear-gradient(135deg, #800000, #c40000); }
+.avatar.gold { background: linear-gradient(135deg, #ffd700, #ffc400); }
+.avatar.sienna { background: linear-gradient(135deg, #a0522d, #cd853f); }
+.avatar.navy { background: linear-gradient(135deg, #000080, #191970); }
+.avatar.olive { background: linear-gradient(135deg, #808000, #c8c800); }
+.avatar.salmon { background: linear-gradient(135deg, #fa8072, #ff7f50); }
+.avatar.darkcyan { background: linear-gradient(135deg, #008b8b, #00ced1); }
+.avatar.darkmagenta { background: linear-gradient(135deg, #8b008b, #c71585); }
+.avatar.peru { background: linear-gradient(135deg, #cd853f, #d2b48c); }
+.avatar.slateblue { background: linear-gradient(135deg, #6a5acd, #836fff); }
+.avatar.chocolate { background: linear-gradient(135deg, #d2691e, #a0522d); }
+.avatar.mediumblue { background: linear-gradient(135deg, #0000cd, #4169e1); }
+.avatar.darkgreen { background: linear-gradient(135deg, #006400, #228b22); }
+.avatar.firebrick { background: linear-gradient(135deg, #b22222, #cd5c5c); }
+.avatar.hotpink { background: linear-gradient(135deg, #ff69b4, #ffb6c1); }
+.avatar.olivedrab { background: linear-gradient(135deg, #6b8e23, #9acd32); }
+.avatar.darkorange { background: linear-gradient(135deg, #ff8c00, #ffa500); }
+.avatar.royalblue { background: linear-gradient(135deg, #4169e1, #6495ed); }
+
+/* Couleurs du Personnel de Soutien 142-150 */
+.avatar.dimgray { background: linear-gradient(135deg, #696969, #a9a9a9); }
+.avatar.darkslateblue { background: linear-gradient(135deg, #483d8b, #6a5acd); }
+.avatar.skyblue { background: linear-gradient(135deg, #87ceeb, #00bfff); }
+.avatar.black { background: linear-gradient(135deg, #000000, #333333); }
+.avatar.orchid { background: linear-gradient(135deg, #da70d6, #ffb6c1); }
+.avatar.saddlebrown { background: linear-gradient(135deg, #8b4513, #a0522d); }
+.avatar.gray { background: linear-gradient(135deg, #808080, #c0c0c0); }
+.avatar.darkolivegreen { background: linear-gradient(135deg, #556b2f, #6b8e23); }
+
+/* --- NOUVELLES COULEURS (Jour Tag) --- */
+
+/* Couleurs des Professeurs 122-141 (Rappel pour exhaustivité) */
+.jour-tag.darkred { background: linear-gradient(90deg, #8b0000, #a52a2a); }
+.jour-tag.maroon { background: linear-gradient(90deg, #800000, #c40000); }
+.jour-tag.gold { background: linear-gradient(90deg, #ffd700, #ffc400); }
+.jour-tag.sienna { background: linear-gradient(90deg, #a0522d, #cd853f); }
+.jour-tag.navy { background: linear-gradient(90deg, #000080, #191970); }
+.jour-tag.olive { background: linear-gradient(90deg, #808000, #c8c800); }
+.jour-tag.salmon { background: linear-gradient(90deg, #fa8072, #ff7f50); }
+.jour-tag.darkcyan { background: linear-gradient(90deg, #008b8b, #00ced1); }
+.jour-tag.darkmagenta { background: linear-gradient(90deg, #8b008b, #c71585); }
+.jour-tag.peru { background: linear-gradient(90deg, #cd853f, #d2b48c); }
+.jour-tag.slateblue { background: linear-gradient(90deg, #6a5acd, #836fff); }
+.jour-tag.chocolate { background: linear-gradient(90deg, #d2691e, #a0522d); }
+.jour-tag.mediumblue { background: linear-gradient(90deg, #0000cd, #4169e1); }
+.jour-tag.darkgreen { background: linear-gradient(90deg, #006400, #228b22); }
+.jour-tag.firebrick { background: linear-gradient(90deg, #b22222, #cd5c5c); }
+.jour-tag.hotpink { background: linear-gradient(90deg, #ff69b4, #ffb6c1); }
+.jour-tag.olivedrab { background: linear-gradient(90deg, #6b8e23, #9acd32); }
+.jour-tag.darkorange { background: linear-gradient(90deg, #ff8c00, #ffa500); }
+.jour-tag.royalblue { background: linear-gradient(90deg, #4169e1, #6495ed); }
+
+/* Couleurs du Personnel de Soutien 142-150 */
+.jour-tag.dimgray { background: linear-gradient(90deg, #696969, #a9a9a9); }
+.jour-tag.darkslateblue { background: linear-gradient(90deg, #483d8b, #6a5acd); }
+.jour-tag.skyblue { background: linear-gradient(90deg, #87ceeb, #00bfff); }
+.jour-tag.black { background: linear-gradient(90deg, #000000, #333333); }
+.jour-tag.orchid { background: linear-gradient(90deg, #da70d6, #ffb6c1); }
+.jour-tag.saddlebrown { background: linear-gradient(90deg, #8b4513, #a0522d); }
+.jour-tag.gray { background: linear-gradient(90deg, #808080, #c0c0c0); }
+.jour-tag.darkolivegreen { background: linear-gradient(90deg, #556b2f, #6b8e23); }
