@@ -60,7 +60,7 @@
         <h3 class="article-title">{{ article.title }}</h3>
         <p class="article-description">{{ article.description }}</p>
         
-        <button class="read-more-btn">
+        <button class="read-more-btn" (click)="openArticle(article)">
           Lire l'article
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M5 12h14"></path>
@@ -79,5 +79,35 @@
     </svg>
     <h3>Aucun article trouvé</h3>
     <p>Essayez de modifier vos critères de recherche</p>
+  </div>
+
+  <!-- Modal pour afficher l'article complet -->
+  <div *ngIf="showArticleModal" class="article-modal-overlay" (click)="closeArticle()">
+    <div class="article-modal" (click)="$event.stopPropagation()">
+      <button class="close-modal-btn" (click)="closeArticle()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="modal-category-badge">{{ selectedArticle?.category }}</span>
+        <h2 class="modal-title">{{ selectedArticle?.title }}</h2>
+        <div class="modal-meta">
+          <span class="modal-author">{{ selectedArticle?.author }}</span>
+          <span class="separator">•</span>
+          <span class="modal-date">{{ formatDate(selectedArticle!.date) }}</span>
+          <span class="separator">•</span>
+          <span class="modal-read-time">{{ selectedArticle?.readTime }}</span>
+        </div>
+      </div>
+
+      <div class="modal-image">
+        <img [src]="selectedArticle?.imageUrl" [alt]="selectedArticle?.title" />
+      </div>
+
+      <div class="modal-content" [innerHTML]="selectedArticle?.content"></div>
+    </div>
   </div>
 </div>
