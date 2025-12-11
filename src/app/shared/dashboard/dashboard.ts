@@ -18,6 +18,5 @@ export class Dashboard implements OnInit{
       this.staffCount=STAFF.length;
       this.onlineClassesCount=ONLINE_CLASSES.length;
       this.coursCount= 5;
-
   }
 }

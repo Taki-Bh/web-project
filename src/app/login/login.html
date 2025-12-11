@@ -15,16 +15,16 @@
             <h2>Sign in</h2>
             <form [formGroup]="loginform" (ngsubmit)="submit()">
                 <label for="email">Email</label>
-                <input type="email" formControlName="email"><br>
+                <input class="inps" type="email" formControlName="email"><br>
                 <label for="pass">Password</label> 
-                <input type="password" formControlName="password"><br>
-                <button type="submit">Login</button>
+                <input class="inps" type="password" formControlName="password"><br>
+                <button class="btn" type="submit">Login</button>
                 <div class="remember">
                     <input type="checkbox"  title="remember me">
                     <label for="rm" style="font-size: 1rem;">remember me</label>
                 </div>
                 <br>
-                <button class="btn">Sign in now</button><br>
+               <br>
                 <a href="#">Lost your password?</a>
                 <div class="signup">
                     <p>Don't have an account ?</p>
