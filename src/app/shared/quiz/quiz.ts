@@ -33,7 +33,8 @@ export class Quiz implements AfterViewInit {
     this.generateQuiz()
   }
   pressedBtn(ans:boolean) {
-    const pElement = this.quizElement.nativeElement.getElementsByTagName('p')[0];
+    setTimeout(()=>{
+      const pElement = this.quizElement.nativeElement.getElementsByTagName('p')[0];
     
     if(this.curIndex < this.MAX_QUESTIONS) {
       pElement.textContent = QUESTIONS[this.listOfRandomIndices[this.curIndex]].Question;
@@ -45,6 +46,8 @@ export class Quiz implements AfterViewInit {
     }else{
       pElement.textContent = `total réponses correctes: ${ this.correctCount }/ ${ this.MAX_QUESTIONS }`
     }
+    },100);
+    
     console.log(this.correctCount)
   }
   resetQuiz(){

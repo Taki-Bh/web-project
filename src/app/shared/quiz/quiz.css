@@ -1,51 +1,101 @@
-#main-container{
-    background: red;
-    height: 80vh;
-    width: 50vw;
-}
-#main-container p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:32px;
-    height: 40vh;
-    width: 40vw;
-    padding: 10vh 5vw;
+#main-container {
+    /* Mimics the banner/card design: clean white card with a subtle shadow */
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Softly rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 50vw; /* Take up available space in its parent */
+    /*max-width: 600px; */
+    margin: 20px auto; /* Center the component horizontally with vertical spacing */
+    padding: 30px;
+    
     text-align: center;
+    border: 1px solid #e0e0e0; /* Very light border for definition */
+    font-family: Arial, sans-serif;
 }
-#resetBtn{
-    position: absolute;
-    height: 10vh;
-    width: 10vh;
-    border-radius: 100%;
-    background: red;
-    border: none;
+
+/* --- Paragraph/Question Styling --- */
+#main-container p {
+    font-size: 1.6em;
+    color: #333333;
+    margin-bottom: 30px;
+    font-weight: 600; /* Semi-bold */
+    line-height: 1.4;
+    
 }
-#main-container div{
-    height: 20vh;
-    width: inherit;
-    background: green;
+
+/* --- Answer Button Container Styling --- */
+#ansbtn-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px;
 }
-#ansbtn-container button{
-  height: 60%;
-  width: 10vw;
-  border: 1px solid rgb(0, 82, 174);
-  border-radius: 20px;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  line-height: 22px;
-  /*color:rgb(0,82,174);*/
-  background: linear-gradient(to left, rgb(36, 115, 206), rgb(0, 45, 248));
-  transition: 0.5s;
 
-  box-shadow: 0 0 5px rgba(0, 81, 174, 0.384);
+/* --- Button General Styling --- */
+#main-container button {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    flex-grow: 1;
+    min-width: 120px;
 }
-p{
-    background:blue;
+
+/* --- Reset Button Styling (Top right, like 'Login' or a secondary action) --- */
+#resetBtn {
+    /* Position it relative to the container flow */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 15px;
+    background-color: #f0f2f5; /* Light grey/off-white background */
+    color: #555555;
+    font-size: 0.9em;
+    font-weight: normal;
+    border: 1px solid #cccccc;
+    min-width: unset;
+    flex-grow: 0;
+}
+
+/* Ensure the container is positioned relatively for the absolute reset button */
+#main-container {
+    position: relative; 
+    /* ... other styles remain ... */
+}
+/* Move the text content down a bit to clear the absolute reset button */
+#main-container p, #ansbtn-container {
+    margin-top: 40px; 
+}
+#resetBtn:hover {
+    background-color: #e0e0e0;
+}
+
+/* --- True Button (Primary Blue - Matches 'Register' button) --- */
+#ansbtn-container #true {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+#ansbtn-container #true:hover {
+    background-color: #0069d9;
+}
+
+/* --- False Button (White/Outline - Matches 'Login' button style) --- */
+#ansbtn-container #false {
+    background-color: #ffffff;
+    color: #007bff;
+    border: 2px solid #007bff; /* Blue outline */
+}
+
+#ansbtn-container #false:hover {
+    background-color: #f0f6ff; /* Very light blue background on hover */
+}
+
+/* --- Active/Pressed State --- */
+#main-container button:active {
+    transform: scale(0.9);
 }

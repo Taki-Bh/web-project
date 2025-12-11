@@ -4,7 +4,12 @@
     margin: 0 auto;
     padding: 2rem;
 }
-
+:host{
+    background:url(../../../public/Logo.jfif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
 /* Header */
 .header {
     text-align: center;
@@ -83,6 +88,18 @@
 .card-header.orange { background: linear-gradient(90deg, #f97316, #ef4444); }
 .card-header.lime { background: linear-gradient(90deg, #22c55e, #84cc16); }
 .card-header.indigo { background: linear-gradient(90deg, #6366f1, #3b82f6); }
+.card-header.cyan { background: linear-gradient(90deg, #06b6d4, #22d3ee); }
+.card-header.teal { background: linear-gradient(90deg, #0d9488, #14b8a6); }
+.card-header.pink { background: linear-gradient(90deg, #ec4899, #f472b6); }
+.card-header.goldenrod { background: linear-gradient(90deg, #fbbf24, #d97706); }
+.card-header.lightcoral { background: linear-gradient(90deg, #f87171, #fb7185); }
+.card-header.seagreen { background: linear-gradient(90deg, #059669, #10b981); }
+.card-header.slategray { background: linear-gradient(90deg, #64748b, #475569); }
+.card-header.violet { background: linear-gradient(90deg, #8b5cf6, #a855f7); }
+.card-header.yellow { background: linear-gradient(90deg, #facc15, #eab308); }
+.card-header.brown { background: linear-gradient(90deg, #92400e, #b45309); }
+.card-header.fuchsia { background: linear-gradient(90deg, #d946ef, #f0abfc); }
+.card-header.lightskyblue { background: linear-gradient(90deg, #38bdf8, #0ea5e9); }
 
 /* Corps de la carte */
 .card-body {
@@ -117,6 +134,18 @@
 .avatar.orange { background: linear-gradient(135deg, #f97316, #ef4444); }
 .avatar.lime { background: linear-gradient(135deg, #22c55e, #84cc16); }
 .avatar.indigo { background: linear-gradient(135deg, #6366f1, #3b82f6); }
+.avatar.cyan { background: linear-gradient(135deg, #06b6d4, #22d3ee); }
+.avatar.teal { background: linear-gradient(135deg, #0d9488, #14b8a6); }
+.avatar.pink { background: linear-gradient(135deg, #ec4899, #f472b6); }
+.avatar.goldenrod { background: linear-gradient(135deg, #fbbf24, #d97706); }
+.avatar.lightcoral { background: linear-gradient(135deg, #f87171, #fb7185); }
+.avatar.seagreen { background: linear-gradient(135deg, #059669, #10b981); }
+.avatar.slategray { background: linear-gradient(135deg, #64748b, #475569); }
+.avatar.violet { background: linear-gradient(135deg, #8b5cf6, #a855f7); }
+.avatar.yellow { background: linear-gradient(135deg, #facc15, #eab308); }
+.avatar.brown { background: linear-gradient(135deg, #92400e, #b45309); }
+.avatar.fuchsia { background: linear-gradient(135deg, #d946ef, #f0abfc); }
+.avatar.lightskyblue { background: linear-gradient(135deg, #38bdf8, #0ea5e9); }
 
 /* Nom professeur */
 .prof-name {
@@ -197,6 +226,19 @@
 .jour-tag.orange { background: linear-gradient(90deg, #f97316, #ef4444); }
 .jour-tag.lime { background: linear-gradient(90deg, #22c55e, #84cc16); }
 .jour-tag.indigo { background: linear-gradient(90deg, #6366f1, #3b82f6); }
+.jour-tag.cyan { background: linear-gradient(90deg, #06b6d4, #22d3ee); }
+.jour-tag.teal { background: linear-gradient(90deg, #0d9488, #14b8a6); }
+.jour-tag.pink { background: linear-gradient(90deg, #ec4899, #f472b6); }
+.jour-tag.goldenrod { background: linear-gradient(90deg, #fbbf24, #d97706); }
+.jour-tag.lightcoral { background: linear-gradient(90deg, #f87171, #fb7185); }
+.jour-tag.seagreen { background: linear-gradient(90deg, #059669, #10b981); }
+.jour-tag.slategray { background: linear-gradient(90deg, #64748b, #475569); }
+.jour-tag.violet { background: linear-gradient(90deg, #8b5cf6, #a855f7); }
+.jour-tag.yellow { background: linear-gradient(90deg, #facc15, #eab308); }
+.jour-tag.brown { background: linear-gradient(90deg, #92400e, #b45309); }
+.jour-tag.fuchsia { background: linear-gradient(90deg, #d946ef, #f0abfc); }
+.jour-tag.lightskyblue { background: linear-gradient(90deg, #38bdf8, #0ea5e9); }
+
 
 /* Pagination */
 .pagination {
