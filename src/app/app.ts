@@ -14,7 +14,6 @@ export class App {
   loaded: boolean = false;
   onActivate() {
     this.loaded = false;
-    // reset state
     setTimeout(() => (this.loaded = true), 10); // apply loaded state
   }
   onPlatformClick() {

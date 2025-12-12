@@ -1,11 +1,9 @@
 <div class="articles-container">
-  <!-- En-tête -->
   <div class="header">
     <h1>Bibliothèque d'Articles</h1>
     <p class="subtitle">Explorez nos ressources éducatives</p>
   </div>
 
-  <!-- Barre de recherche et filtres -->
   <div class="search-filter-section">
     <div class="search-box">
       <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -34,13 +32,10 @@
       </select>
     </div>
   </div>
-
-  <!-- Résultats -->
   <div class="results-info">
     <p>{{ filteredArticles.length }} article(s) trouvé(s)</p>
   </div>
 
-  <!-- Grille d'articles -->
   <div class="articles-grid">
     <div *ngFor="let article of filteredArticles" class="article-card">
       <div class="article-image">
@@ -71,7 +66,6 @@
     </div>
   </div>
 
-  <!-- Message si aucun résultat -->
   <div *ngIf="filteredArticles.length === 0" class="no-results">
     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="11" cy="11" r="8"></circle>
@@ -81,7 +75,6 @@
     <p>Essayez de modifier vos critères de recherche</p>
   </div>
 
-  <!-- Modal pour afficher l'article complet -->
   <div *ngIf="showArticleModal" class="article-modal-overlay" (click)="closeArticle()">
     <div class="article-modal" (click)="$event.stopPropagation()">
       <button class="close-modal-btn" (click)="closeArticle()">

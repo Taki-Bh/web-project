@@ -62,18 +62,24 @@ export const ARTICLES_DATA: Article[] = [
     description: 'Apprenez le framework de Angular : Routing, Reactive Forms, Services.',
     category: 'Sciences Informatiques',
     instructorId: 104, // Prof. Mohamed LASSOUED - Informatique
-    date: new Date('2024-11-22'),
+    date: new Date('2025-11-22'),
     imageUrl: 'https://images.unsplash.com/photo-1699885960867-56d5f5262d38?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     readTime: '10 min',
     content: `
-      <h2>Les Algorithmes de Tri</h2>
-      <p>Le tri est une opération fondamentale en informatique qui consiste à organiser des données selon un ordre défini.</p>
-      
-      <h3>Tri à Bulles</h3>
-      <p>Complexité : O(n²) - Simple mais inefficace pour de grandes listes.</p>
-      
-      <h3>Tri Rapide (Quick Sort)</h3>
-      <p>Complexité moyenne : O(n log n) - L'un des algorithmes les plus efficaces.</p>
+      <h2>Framework Angular</h2>
+<p>Angular est un framework TypeScript open-source utilisé pour développer des applications web dynamiques et robustes côté client. Il permet de créer des interfaces riches grâce à des composants modulaires, des services et un système de routage puissant.</p>
+
+<h3>Les Composants (Components)</h3>
+<p>Les composants sont les blocs de construction principaux d'une application Angular. Ils contiennent le code HTML, CSS et TypeScript nécessaire pour afficher et gérer une partie de l'interface utilisateur.</p>
+
+<h3>Les Services et l'Injection de Dépendances</h3>
+<p>Les services permettent de centraliser la logique métier et les appels aux API. L'injection de dépendances facilite le partage de ces services entre différents composants sans répéter le code.</p>
+
+<h3>Routing et Navigation</h3>
+<p>Le module de routing d'Angular permet de gérer la navigation entre différentes vues de l'application, avec des routes configurables et des paramètres dynamiques.</p>
+
+<h3>Reactive Forms et Gestion des Données</h3>
+<p>Angular propose des Reactive Forms pour gérer efficacement les formulaires complexes, valider les entrées et synchroniser les données avec le modèle.</p>
     `
   },
   {
@@ -82,7 +88,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'Maîtrisez les techniques d\'argumentation et analysez les stratégies persuasives dans les textes classiques et modernes.',
     category: 'Français',
     instructorId: 114, // Prof. Lucas Bernard - Littérature Française
-    date: new Date('2024-11-15'),
+    date: new Date('2025-11-15'),
     imageUrl: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&h=250&fit=crop',
     readTime: '14 min',
     content: `
@@ -104,7 +110,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'دراسة شاملة للأدب العربي في العصر العباسي مع التركيز على أهم الشعراء والكتاب وخصائص هذا العصر الذهبي.',
     category: 'Arabe',
     instructorId: 123, // Dr. Amel Cherif - Arabe Classique
-    date: new Date('2024-11-17'),
+    date: new Date('2025-11-17'),
     imageUrl: 'https://images.unsplash.com/photo-1509869175650-a1d97972541a?w=400&h=250&fit=crop',
     readTime: '13 min',
     content: `
@@ -126,7 +132,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'Exploration philosophique de la conscience selon Freud, Descartes et les philosophes contemporains.',
     category: 'Philosophie',
     instructorId: 109, // Dr. Claire Dupont - Philosophie
-    date: new Date('2024-11-12'),
+    date: new Date('2025-11-12'),
     imageUrl: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop',
     readTime: '16 min',
     content: `
@@ -160,7 +166,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'Comprendre les réactions d\'oxydoréduction, équilibrer les équations et résoudre les exercices types du baccalauréat.',
     category: 'Sciences Expérimentales',
     instructorId: 103, // Dr. Marie Dubois - Chimie
-    date: new Date('2024-11-19'),
+    date: new Date('2025-11-19'),
     imageUrl: 'https://images.unsplash.com/photo-1532634993-15f421e42ec0?w=400&h=250&fit=crop',
     readTime: '12 min',
     content: `
@@ -177,7 +183,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'Introduction au modèle relationnel, langage SQL et conception de bases de données avec des exemples pratiques.',
     category: 'Sciences Informatiques',
     instructorId: 129, // Dr. Zied Boughanmi - Informatique
-    date: new Date('2024-11-21'),
+    date: new Date('2025-11-21'),
     imageUrl: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=250&fit=crop',
     readTime: '14 min',
     content: `
@@ -194,7 +200,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'Analyse des causes, déroulement et conséquences de la Seconde Guerre mondiale avec chronologie détaillée.',
     category: 'Histoire-Géographie',
     instructorId: 107, // Dr. Nadia Ben Salem - Histoire
-    date: new Date('2024-11-16'),
+    date: new Date('2025-11-16'),
     imageUrl: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop',
     readTime: '18 min',
     content: `
@@ -215,7 +221,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'Découvrez le mouvement romantique en France à travers les œuvres de Victor Hugo, Lamartine et Musset.',
     category: 'Français',
     instructorId: 136, // Prof. Noureddine Jlassi - Littérature Comparée
-    date: new Date('2024-11-14'),
+    date: new Date('2025-11-14'),
     imageUrl: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=250&fit=crop',
     readTime: '13 min',
     content: `
@@ -236,7 +242,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'Master the four types of conditional sentences with clear explanations, examples, and practice exercises.',
     category: 'Anglais',
     instructorId: 106, // Prof. Jean Rousseau - Anglais
-    date: new Date('2024-11-23'),
+    date: new Date('2025-11-23'),
     imageUrl: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400&h=250&fit=crop',
     readTime: '10 min',
     content: `
@@ -258,7 +264,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'شرح مفصل للجملة الفعلية وأركانها مع أمثلة تطبيقية وتمارين محلولة لطلاب الباكالوريا.',
     category: 'Arabe',
     instructorId: 123, // Dr. Amel Cherif - Arabe Classique
-    date: new Date('2024-11-13'),
+    date: new Date('2025-11-13'),
     imageUrl: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=250&fit=crop',
     readTime: '11 min',
     content: `
@@ -279,7 +285,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'Analyse de la conception existentialiste de la liberté chez Jean-Paul Sartre et ses implications morales.',
     category: 'Philosophie',
     instructorId: 109, // Dr. Claire Dupont - Philosophie
-    date: new Date('2024-11-11'),
+    date: new Date('2025-11-11'),
     imageUrl: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=250&fit=crop',
     readTime: '15 min',
     content: `
@@ -300,7 +306,7 @@ export const ARTICLES_DATA: Article[] = [
     description: 'Étude complète des suites arithmétiques, géométriques et récurrentes avec méthodes de résolution.',
     category: 'Mathématiques',
     instructorId: 141, // Dr. Wajih Gharbi - Mathématiques
-    date: new Date('2024-11-24'),
+    date: new Date('2025-11-24'),
     imageUrl: 'https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=400&h=250&fit=crop',
     readTime: '13 min',
     content: `

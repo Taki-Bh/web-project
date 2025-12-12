@@ -21,7 +21,6 @@ export class Articles {
   allArticles: Article[] = ARTICLES_DATA;
   professors = PROFS;
 
-  // Helper method to get professor name by ID
   getProfessorName(instructorId: number): string {
     const prof = this.professors.find(p => p.id === instructorId);
     return prof ? prof.name : 'Unknown';

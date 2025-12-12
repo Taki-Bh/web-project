@@ -22,7 +22,6 @@ export class Offers {
   selectedOffer: Offer | null = null;
   showCheckoutModal: boolean = false;
   
-  // Formulaire de checkout
   checkoutForm = {
     fullName: '',
     email: '',

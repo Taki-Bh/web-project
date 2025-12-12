@@ -20,7 +20,6 @@ export class Login {
   accountBlocked = false;
   loginError = '';
 
-  // Utilisateur mock
   mockUser = { email: 'test@example.com', password: '123456' };
 
   submit() {
