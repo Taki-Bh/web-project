@@ -1,37 +1,70 @@
 <div class="body">
-    <h1>To5mam-تُخمام </h1>
-    <div class="firstcontainer">
-        <section class="left section">
-            <h1>Welcome back</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi numquam dignissimos exercitationem praesentium. Sunt, dolores reiciendis voluptatibus tempora facilis praesentium dicta aspernatur adipisci officiis dolorum doloremque sequi error deserunt soluta?</h3>
-            <div class="icons">
-                <i class='bx bxl-facebook-circle'></i>
-                <i class='bx bxl-twitter' ></i>
-                <i class='bx bxl-instagram-alt' ></i>
-                <i class='bx bxl-youtube' ></i>
-            </div>
-        </section>
-        <section class="right section">
-            <h2>Sign up</h2>
-            <form action="">
-                <label for="username">Username</label>
-                <input required class="inps" type="text" name="username" id="username"><br>
+  <div class="firstcontainer">
+    <section class="left section">
+      <h1>Welcome back</h1>
+      <h3>to5mam est une plateforme éducative en ligne tunisienne fondée sur le principe : un étudiant qui aide un étudiant.
+Elle permet aux élèves et étudiants de partager leurs connaissances, cours et expériences pour progresser ensemble.
+Accessible, collaborative et proche des besoins réels des jeunes, to5mam crée une communauté d’apprentissage solidaire et efficace.</h3>
+      <div class="icons">
+        <i class='bx bxl-facebook-circle'></i>
+        <i class='bx bxl-twitter'></i>
+        <i class='bx bxl-instagram-alt'></i>
+        <i class='bx bxl-youtube'></i>
+      </div>
+    </section>
 
-                <label for="email">Email</label>
-                <input required class="inps" type="email" name="email" id="email"><br>
-                <label for="pass">Password</label>
-                <input required class="inps" type="password" name="pass" id="pass"><br>
-                <label for="pass">Confirm password</label>
-                <input required class="inps" type="password" name="pass" id="pass"><br>
-                
-                <div class="remember">
-                    <input type="checkbox"  title="remember me">
-                    <label for="rm" style="font-size: 1rem;">remember me</label>
-                </div>
-                <br>
-                <button class="btn">Sign up</button><br>
-                <h3>By clicking "Sign up" you agree to <a href="#">Terms of Service</a> | <a href="#">Privacy policy</a></h3>
-            </form>
-        </section>
-    </div>
+    <section class="right section">
+      <h2>Sign up</h2>
+
+      <form [formGroup]="signupform" (ngSubmit)="submit()" class="form-container">
+
+        <label for="username">Username</label>
+        <input class="inps" type="text" formControlName="username">
+        <div class="error" *ngIf="signupform.get('username')?.invalid && (signupform.get('username')?.dirty || signupform.get('username')?.touched)">
+          <small *ngIf="signupform.get('username')?.errors?.['required']">Username requis</small>
+          <small *ngIf="signupform.get('username')?.errors?.['minlength']">Minimum 3 caractères</small>
+        </div>
+        <br>
+
+        <label for="email">Email</label>
+        <input class="inps" type="email" formControlName="email">
+        <div class="error" *ngIf="signupform.get('email')?.invalid && (signupform.get('email')?.dirty || signupform.get('email')?.touched)">
+          <small *ngIf="signupform.get('email')?.errors?.['required']">Email requis</small>
+          <small *ngIf="signupform.get('email')?.errors?.['email']">Email invalide</small>
+        </div>
+        <br>
+
+        <label for="password">Password</label>
+        <input class="inps" type="password" formControlName="password">
+        <div class="error" *ngIf="signupform.get('password')?.invalid && (signupform.get('password')?.dirty || signupform.get('password')?.touched)">
+          <small *ngIf="signupform.get('password')?.errors?.['required']">Mot de passe requis</small>
+          <small *ngIf="signupform.get('password')?.errors?.['minlength']">Minimum 6 caractères</small>
+        </div>
+        <br>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input class="inps" type="password" formControlName="confirmPassword">
+        <div class="error" *ngIf="signupform.get('confirmPassword')?.invalid && (signupform.get('confirmPassword')?.dirty || signupform.get('confirmPassword')?.touched)">
+          <small *ngIf="signupform.get('confirmPassword')?.errors?.['required']">Confirmation requise</small>
+        </div>
+
+        <div class="error" *ngIf="signupform.errors?.['passwordsMismatch'] && (signupform.get('confirmPassword')?.dirty || signupform.get('confirmPassword')?.touched)">
+          <small>Les mots de passe ne correspondent pas</small>
+        </div>
+        <br>
+
+        <div class="remember">
+          <input type="checkbox" title="remember me">
+          <label for="rm" style="font-size: 1rem;">remember me</label>
+        </div>
+        <br>
+
+        <button class="btn" type="submit">Sign up</button>
+        <br>
+
+        <h3>By clicking "Sign up" you agree to <a href="#">Terms of Service</a> | <a href="#">Privacy policy</a></h3>
+
+      </form>
+    </section>
+  </div>
 </div>

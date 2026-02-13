@@ -4,108 +4,222 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color:white;
 }
-.body{
-    
-    margin: 3rem 1rem;
+/* --- Component/Main Container Styles (Identical to Login) --- */
+
+.body {
+    /* Use for full-screen layout in the component */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f0f2f5; /* Light grey background */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.firstcontainer {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    /* Increase height slightly to accommodate the extra form fields */
+    height: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.section {
+    padding: 40px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-.firstcontainer{
-    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10rem;
-    max-width: 60rem;
-}
-form>input{
-    margin-bottom: 1rem;
-    border: 0px linear-gradient(15deg, #0a1c25 0%, #2D336B 100%);;
-}
-.section{
-    padding: 0rem 3rem;
-    min-height: 100vh;
-}
-h1{
-    font-size: 4rem;
-    margin-bottom: 2rem;
-}
-h3{
-    margin: 2rem 0rem ;
-    font-size: 0.8rem;
-    font-weight: 300;
     text-align: center;
 }
-a{
-    color:white ;
+
+/* --- Left Section (Informative/Welcome Side - Blue) --- */
+
+.left.section {
+    flex: 1;
+    background: linear-gradient(135deg, #007bffc2 0%, #004c9c 100%);    color: white;
 }
-h2{
-    font-size: 3rem;
-    margin-bottom: 3rem;
+
+.left.section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
-.inps{
-    min-height: 2.5rem;
-    min-width: 22rem;
-    border-radius: 7px;
-    transition: 0.5s ease;
+
+.left.section h3 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 80%;
 }
-label{
-    font-size: 0.8rem;
-}
-.btn{
-    color: white;   
-    background-color: #7886C7;   
-    padding: 0.5rem 1rem;
-    border: 0px;
-    border-radius: 7px;
-    margin-bottom: 2rem ;
-    font-size: 1rem;
-    transition: 0.5s ease-in-out;
-}
-.icons{
+
+.icons {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    font-size: 2rem;
+    gap: 20px;
+    margin-top: 20px;
 }
-.icons>i{
-    margin-right: 1rem;
-    transition: 0.5s ease-in-out;
+
+.icons i {
+    font-size: 2.5em;
     cursor: pointer;
+    transition: color 0.3s;
 }
-.icons>i:hover{
-    color: #7886C7;
-    transform: scale(1.05);
+
+.icons i:hover {
+    color: #e6f0ff;
 }
-.inps:hover{
-    transform: scale(1.05);
+
+/* --- Right Section (Sign Up Form Side - White) --- */
+
+.right.section {
+    flex: 1;
+    background-color: white;
+    padding: 40px; /* Adjusted padding to better fit content */
+    justify-content: flex-start;
 }
-.btn:hover{
-    transform: scale(1.05);
-    background-color: #2D336B;
-    -webkit-transition:#7886C7 round-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
+
+.right.section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px; /* Reduced margin for more vertical space */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+    /* Allow scrolling if the form is too long on shorter screens */
+    overflow-y: auto; 
+    padding-right: 15px; /* Space for the scrollbar */
+    box-sizing: border-box;
+}
+
+
+/* --- Form Elements --- */
+
+.right.section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.inps {
+    width: 100%;
+    padding: 10px 15px; /* Slightly reduced padding to save vertical space */
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.inps:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.error small {
+    color: #dc3545; /* Red for validation errors */
+    font-size: 0.8em; /* Slightly smaller font for error messages */
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+/* --- Sign Up Button (The main action, uses the bright primary blue) --- */
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-.signup{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+
+.btn:hover {
+    background-color: #0056b3;
 }
-.aboutsection{
+
+.btn:active {
+    transform: scale(0.99);
+}
+
+/* --- Utility and Link Styles --- */
+
+.remember {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    margin-top: 10px;
+    font-size: 0.9em;
 }
-.contactsection{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+
+.remember input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.right.section a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.right.section a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.right.section h3 {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #888;
+    margin-top: 15px; /* Reduced margin */
+    text-align: center;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 768px) {
+    .firstcontainer {
+        flex-direction: column;
+        height: auto;
+        max-width: 450px;
+    }
+
+    .left.section {
+        padding: 30px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .right.section {
+        padding: 30px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .form-container {
+        max-width: none;
+        overflow-y: visible; /* Disable scrolling on smaller screens if not necessary */
+        padding-right: 0;
+    }
 }

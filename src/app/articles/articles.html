@@ -1,1 +1,106 @@
-<p>articles works!</p>
+<div class="articles-container">
+  <div class="header">
+    <h1>Bibliothèque d'Articles</h1>
+    <p class="subtitle">Explorez nos ressources éducatives</p>
+  </div>
+
+  <div class="search-filter-section">
+    <div class="search-box">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.35-4.35"></path>
+      </svg>
+      <input 
+        type="text" 
+        placeholder="Rechercher un article, auteur..." 
+        [(ngModel)]="searchTerm"
+        (ngModelChange)="onSearchChange($event)"
+        class="search-input"
+      />
+    </div>
+
+    <div class="filter-section">
+      <label class="filter-label">Catégorie:</label>
+      <select 
+        [(ngModel)]="selectedCategory"
+        (ngModelChange)="onCategoryChange($event)"
+        class="category-select"
+      >
+        <option *ngFor="let category of categories" [value]="category">
+          {{ category === 'all' ? 'Toutes les catégories' : category }}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="results-info">
+    <p>{{ filteredArticles.length }} article(s) trouvé(s)</p>
+  </div>
+
+  <div class="articles-grid">
+    <div *ngFor="let article of filteredArticles" class="article-card">
+      <div class="article-image">
+        <img [src]="article.imageUrl" [alt]="article.title" />
+        <span class="category-badge">{{ article.category }}</span>
+      </div>
+      
+      <div class="article-content">
+        <div class="article-meta">
+          <span class="author">{{ getProfessorName(article.instructorId) }}</span>
+          <span class="separator">•</span>
+          <span class="date">{{ formatDate(article.date) }}</span>
+          <span class="separator">•</span>
+          <span class="read-time">{{ article.readTime }}</span>
+        </div>
+        
+        <h3 class="article-title">{{ article.title }}</h3>
+        <p class="article-description">{{ article.description }}</p>
+        
+        <button class="read-more-btn" (click)="openArticle(article)">
+          Lire l'article
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="filteredArticles.length === 0" class="no-results">
+    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="m21 21-4.35-4.35"></path>
+    </svg>
+    <h3>Aucun article trouvé</h3>
+    <p>Essayez de modifier vos critères de recherche</p>
+  </div>
+
+  <div *ngIf="showArticleModal" class="article-modal-overlay" (click)="closeArticle()">
+    <div class="article-modal" (click)="$event.stopPropagation()">
+      <button class="close-modal-btn" (click)="closeArticle()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="modal-category-badge">{{ selectedArticle?.category }}</span>
+        <h2 class="modal-title">{{ selectedArticle?.title }}</h2>
+        <div class="modal-meta">
+          <span class="modal-author">{{ getProfessorName(selectedArticle!.instructorId) }}</span>
+          <span class="separator">•</span>
+          <span class="modal-date">{{ formatDate(selectedArticle!.date) }}</span>
+          <span class="separator">•</span>
+          <span class="modal-read-time">{{ selectedArticle?.readTime }}</span>
+        </div>
+      </div>
+
+      <div class="modal-image">
+        <img [src]="selectedArticle?.imageUrl" [alt]="selectedArticle?.title" />
+      </div>
+
+      <div class="modal-content" [innerHTML]="selectedArticle?.content"></div>
+    </div>
+  </div>
+</div>

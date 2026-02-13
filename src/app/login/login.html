@@ -1,8 +1,11 @@
-<h1>To5mam-تُخمام </h1>
+<div class="body">
+
     <div class="firstcontainer">
         <section class="left section">
             <h1>Welcome back</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi numquam dignissimos exercitationem praesentium. Sunt, dolores reiciendis voluptatibus tempora facilis praesentium dicta aspernatur adipisci officiis dolorum doloremque sequi error deserunt soluta?</h3>
+            <h3>to5mam est une plateforme éducative en ligne tunisienne fondée sur le principe : un étudiant qui aide un étudiant.
+Elle permet aux élèves et étudiants de partager leurs connaissances, cours et expériences pour progresser ensemble.
+Accessible, collaborative et proche des besoins réels des jeunes, to5mam crée une communauté d’apprentissage solidaire et efficace.</h3>
             <div class="icons">
                 <i class='bx bxl-facebook-circle'></i>
                 <i class='bx bxl-twitter' ></i>
@@ -10,26 +13,44 @@
                 <i class='bx bxl-youtube' ></i>
             </div>
         </section>
-        <section class="right section">
+        <section class="right section" >
             <h2>Sign in</h2>
-            <form action="">
+            <form [formGroup]="loginform" (ngSubmit)="submit()">
                 <label for="email">Email</label>
-                <input required class="inps" type="email" name="email" id="email"><br>
-                <label for="pass">Password</label>
-                <input required class="inps" type="password" name="pass" id="pass"><br>
+                <input class="inps" type="email" formControlName="email">
+                <div class="error" *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+                    <small *ngIf="email?.errors?.['required']">Email requis</small>
+                    <small *ngIf="email?.errors?.['email']">Email invalide</small>
+                </div>
+                <br>
+                <label for="pass">Password</label> 
+                <input class="inps" type="password" formControlName="password">
+                <div class="error" *ngIf="password?.invalid && (password?.dirty || password?.touched)">
+                    <small *ngIf="password?.errors?.['required']">Mot de passe requis</small>
+                    <small *ngIf="password?.errors?.['minlength']">Minimum 6 caractères</small>
+                </div>
+                <br>
+                <button class="btn" type="submit">Login</button>
+                 <div class="login-error" *ngIf="loginError">
+                     {{ loginError }}
+               </div>
                 <div class="remember">
                     <input type="checkbox"  title="remember me">
                     <label for="rm" style="font-size: 1rem;">remember me</label>
                 </div>
                 <br>
-                <button class="btn">Sign in now</button><br>
+               <br>
                 <a href="#">Lost your password?</a>
                 <div class="signup">
                     <p>Don't have an account ?</p>
-                    <a href="./signup.html">Signup</a>
+                    <a routerLink="/signup" routerLinkActive="active">Signup</a>
                 </div>
 
                 <h3>By clicking "Sign in now" you agree to <a href="#">Terms of Service</a> | <a href="#">Privacy policy</a></h3>
             </form>
         </section>
     </div>
+    </div>
+<ng-template #blocked>
+  <h3>Compte bloqué temporairement. Réessayez plus tard.</h3>
+</ng-template>

@@ -1,0 +1,32 @@
+#reg{
+  height: 13vh;
+  width: 17vw;
+  border: 1px solid rgb(0, 82, 174);
+  border-radius: 20px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 22px;
+  /*color:rgb(0,82,174);*/
+  background: linear-gradient(to left, rgb(36, 115, 206), rgb(0, 45, 248));
+  transition: 0.5s;
+
+  box-shadow: 0 0 5px rgba(0, 81, 174, 0.384);
+  margin-top: 16vh;
+}
+#reg:hover {
+  cursor: pointer;
+
+  transform: scale(1.05);
+  transform: translateX(2%);
+  box-shadow: -2px 6px 10px grey;
+  border: 1px solid grey;
+}
+#reg {
+  color: white;
+}
+#reg:hover {
+    text-shadow: white 0px 0px 1px;
+}
